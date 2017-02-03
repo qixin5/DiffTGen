@@ -1,0 +1,1288 @@
+2017-01-31 21:59:07,846 INFO main - command line arguments: [-jvm4testexecution  /home/qx5/jdk1.8.0_111/bin  -dependencies  /data/people/qx5/repsystem2/repair0/Chart_15_jKali/all0.jar:/data/people/qx5/testgen/lib/commons-lang3-3.5.jar:/data/people/qx5/testgen/lib/myprinter.jar:/data/people/qx5/testgen/lib/evosuite-1.0.2.jar  -id  Chart_15  -failing  org.jfree.chart.plot.junit.PiePlot3DTests  -mode  statement-remove  -location  /data/people/qx5/repsystem2/repair0/Chart_15_jKali  -package  org.jfree  -flthreshold  0.1  -maxtime  120  -stopfirst  true  -srcjavafolder  /src/main/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -out  /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7]
+2017-01-31 22:00:07,201 INFO main - -Executing Gzoltar classpath: /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15//bin//default from 349 classes with test cases
+2017-01-31 22:00:07,205 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
+2017-01-31 22:00:09,626 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/data/people/qx5/repsystem2/repair0/Chart_15_jKali/all0.jar, /data/people/qx5/testgen/lib/commons-lang3-3.5.jar, /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15//bin//default, /data/people/qx5/testgen/lib/evosuite-1.0.2.jar, /data/people/qx5/testgen/lib/myprinter.jar]
+2017-01-31 22:00:53,458 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.jfree.chart.plot.DiffTGen0Test#test00
+2017-01-31 22:00:53,478 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.jfree.chart.plot.junit.PiePlot3DTests#testDrawWithNullDataset
+2017-01-31 22:00:53,489 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.jfree.chart.plot.junit.PiePlot3DTests#testDrawWithNullDataset
+2017-01-31 22:00:53,497 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:3580, fails: 3, GZoltar suspicious 21844
+2017-01-31 22:00:53,594 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 515 with susp > 0.1, we consider: 515
+2017-01-31 22:00:53,606 INFO main - building model: /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15//src//default, compliance level: 8
+2017-01-31 22:01:42,903 INFO main - 
+---- Initial suspicious size: 515
+2017-01-31 22:01:44,008 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot3D, methodName=org.jfree.chart.plot.PiePlot3D{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/plot/PlotState;Lorg/jfree/chart/plot/PlotRenderingInfo;)V 0.0, lineNumber=233, susp=0.5773502691896258]
+2017-01-31 22:01:44,022 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot3D, methodName=org.jfree.chart.plot.PiePlot3D{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/plot/PlotState;Lorg/jfree/chart/plot/PlotRenderingInfo;)V 0.0, lineNumber=234, susp=0.5773502691896258]
+2017-01-31 22:01:44,035 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot3D, methodName=org.jfree.chart.plot.PiePlot3D{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/plot/PlotState;Lorg/jfree/chart/plot/PlotRenderingInfo;)V 0.0, lineNumber=239, susp=0.5773502691896258]
+2017-01-31 22:01:44,049 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot3D, methodName=org.jfree.chart.plot.PiePlot3D{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/plot/PlotState;Lorg/jfree/chart/plot/PlotRenderingInfo;)V 0.0, lineNumber=241, susp=0.5773502691896258]
+2017-01-31 22:01:44,062 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot3D, methodName=org.jfree.chart.plot.PiePlot3D{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/plot/PlotState;Lorg/jfree/chart/plot/PlotRenderingInfo;)V 0.0, lineNumber=242, susp=0.5773502691896258]
+2017-01-31 22:01:44,076 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot3D, methodName=org.jfree.chart.plot.PiePlot3D{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/plot/PlotState;Lorg/jfree/chart/plot/PlotRenderingInfo;)V 0.0, lineNumber=245, susp=0.5773502691896258]
+2017-01-31 22:01:45,023 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot3D, methodName=org.jfree.chart.plot.PiePlot3D{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/plot/PlotState;Lorg/jfree/chart/plot/PlotRenderingInfo;)V 0.0, lineNumber=250, susp=0.5773502691896258]
+2017-01-31 22:01:45,190 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlotState, methodName=org.jfree.chart.plot.PiePlotState{setPassesRequired(I)V 0.0, lineNumber=110, susp=0.47140452079103173]
+2017-01-31 22:01:45,466 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.Plot, methodName=org.jfree.chart.plot.Plot{drawBackground(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;)V 0.0, lineNumber=933, susp=0.3651483716701107]
+2017-01-31 22:01:45,479 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.Plot, methodName=org.jfree.chart.plot.Plot{fillBackground(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;)V 0.0, lineNumber=947, susp=0.3651483716701107]
+2017-01-31 22:01:45,550 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.PiePlot, methodName=org.jfree.chart.plot.PiePlot{setCircular(ZZ)V 0.0, lineNumber=735, susp=0.3086066999241838]
+2017-01-31 22:01:45,622 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextBlock, methodName=org.jfree.chart.text.TextBlock{setLineAlignment(Lorg/jfree/chart/util/HorizontalAlignment;)V 0.0, lineNumber=109, susp=0.1466471150213533]
+2017-01-31 22:01:45,845 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.JFreeChart, methodName=org.jfree.chart.JFreeChart{drawTitle(Lorg/jfree/chart/title/Title;Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Z)Lorg/jfree/chart/entity/EntityCollection; 0.0, lineNumber=1312, susp=0.1466471150213533]
+2017-01-31 22:01:46,290 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.title.TextTitle, methodName=org.jfree.chart.title.TextTitle{drawHorizontal(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;)V 0.0, lineNumber=638, susp=0.1466471150213533]
+2017-01-31 22:01:46,305 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.Plot, methodName=org.jfree.chart.plot.Plot{setInsets(Lorg/jfree/chart/util/RectangleInsets;)V 0.0, lineNumber=505, susp=0.1466471150213533]
+2017-01-31 22:01:46,356 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.Plot, methodName=org.jfree.chart.plot.Plot{setInsets(Lorg/jfree/chart/util/RectangleInsets;Z)V 0.0, lineNumber=529, susp=0.13801311186847084]
+2017-01-31 22:01:46,658 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.Plot, methodName=org.jfree.chart.plot.Plot{fillBackground(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/plot/PlotOrientation;)V 0.0, lineNumber=991, susp=0.10540925533894598]
+2017-01-31 22:01:46,676 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.plot.Plot, methodName=org.jfree.chart.plot.Plot{drawBackgroundImage(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;)V 0.0, lineNumber=1018, susp=0.10540925533894598]
+2017-01-31 22:01:46,721 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextFragment, methodName=org.jfree.chart.text.TextFragment{draw(Ljava/awt/Graphics2D;FFLorg/jfree/chart/text/TextAnchor;FFD)V 0.0, lineNumber=211, susp=0.10286889997472794]
+2017-01-31 22:01:46,780 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextBlock, methodName=org.jfree.chart.text.TextBlock{calculateDimensions(Ljava/awt/Graphics2D;)Lorg/jfree/chart/util/Size2D; 0.0, lineNumber=170, susp=0.10286889997472794]
+2017-01-31 22:01:46,787 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextBlock, methodName=org.jfree.chart.text.TextBlock{draw(Ljava/awt/Graphics2D;FFLorg/jfree/chart/text/TextBlockAnchor;)V 0.0, lineNumber=211, susp=0.10286889997472794]
+2017-01-31 22:01:46,833 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextBlock, methodName=org.jfree.chart.text.TextBlock{draw(Ljava/awt/Graphics2D;FFLorg/jfree/chart/text/TextBlockAnchor;FFD)V 0.0, lineNumber=249, susp=0.10286889997472794]
+2017-01-31 22:01:46,835 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextBlock, methodName=org.jfree.chart.text.TextBlock{draw(Ljava/awt/Graphics2D;FFLorg/jfree/chart/text/TextBlockAnchor;FFD)V 0.0, lineNumber=251, susp=0.10286889997472794]
+2017-01-31 22:01:46,890 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.block.FlowArrangement, methodName=org.jfree.chart.block.FlowArrangement{clear()V 0.0, lineNumber=416, susp=0.10286889997472794]
+2017-01-31 22:01:46,921 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextLine, methodName=org.jfree.chart.text.TextLine{draw(Ljava/awt/Graphics2D;FFLorg/jfree/chart/text/TextAnchor;FFD)V 0.0, lineNumber=165, susp=0.10286889997472794]
+2017-01-31 22:01:46,923 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextLine, methodName=org.jfree.chart.text.TextLine{draw(Ljava/awt/Graphics2D;FFLorg/jfree/chart/text/TextAnchor;FFD)V 0.0, lineNumber=167, susp=0.10286889997472794]
+2017-01-31 22:01:46,942 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextLine, methodName=org.jfree.chart.text.TextLine{calculateDimensions(Ljava/awt/Graphics2D;)Lorg/jfree/chart/util/Size2D; 0.0, lineNumber=185, susp=0.10286889997472794]
+2017-01-31 22:01:46,958 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextLine, methodName=org.jfree.chart.text.TextLine{calculateBaselineOffset(Ljava/awt/Graphics2D;Lorg/jfree/chart/text/TextAnchor;)F 0.0, lineNumber=233, susp=0.10286889997472794]
+2017-01-31 22:01:46,978 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextUtilities, methodName=org.jfree.chart.text.TextUtilities{drawRotatedString(Ljava/lang/String;Ljava/awt/Graphics2D;FFLorg/jfree/chart/text/TextAnchor;DFF)V 0.0, lineNumber=524, susp=0.10286889997472794]
+2017-01-31 22:01:47,117 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.JFreeChart, methodName=org.jfree.chart.JFreeChart{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Point2D;Lorg/jfree/chart/ChartRenderingInfo;)V 0.0, lineNumber=1210, susp=0.10286889997472794]
+2017-01-31 22:01:47,205 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.JFreeChart, methodName=org.jfree.chart.JFreeChart{drawTitle(Lorg/jfree/chart/title/Title;Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Z)Lorg/jfree/chart/entity/EntityCollection; 0.0, lineNumber=1320, susp=0.10286889997472794]
+2017-01-31 22:01:47,255 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.title.LegendTitle, methodName=org.jfree.chart.title.LegendTitle{fetchLegendItems()V 0.0, lineNumber=406, susp=0.10286889997472794]
+2017-01-31 22:01:47,420 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.block.BlockBorder, methodName=org.jfree.chart.block.BlockBorder{draw(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;)V 0.0, lineNumber=192, susp=0.10206207261596577]
+2017-01-31 22:01:47,450 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.util.RectangleInsets, methodName=org.jfree.chart.util.RectangleInsets{trim(Ljava/awt/geom/Rectangle2D;)V 0.0, lineNumber=552, susp=0.10206207261596577]
+2017-01-31 22:01:47,456 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.block.BlockParams, methodName=org.jfree.chart.block.BlockParams{setGenerateEntities(Z)V 0.0, lineNumber=95, susp=0.10206207261596577]
+2017-01-31 22:01:47,478 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextUtilities, methodName=org.jfree.chart.text.TextUtilities{getTextBounds(Ljava/lang/String;Ljava/awt/Graphics2D;Ljava/awt/FontMetrics;)Ljava/awt/geom/Rectangle2D; 0.0, lineNumber=297, susp=0.10206207261596577]
+2017-01-31 22:01:47,516 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.text.TextUtilities, methodName=org.jfree.chart.text.TextUtilities{drawRotatedString(Ljava/lang/String;Ljava/awt/Graphics2D;FFDFF)V 0.0, lineNumber=499, susp=0.10206207261596577]
+2017-01-31 22:01:47,726 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.block.AbstractBlock, methodName=org.jfree.chart.block.AbstractBlock{drawBorder(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;)V 0.0, lineNumber=546, susp=0.10206207261596577]
+2017-01-31 22:01:47,732 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.block.BlockContainer, methodName=org.jfree.chart.block.BlockContainer{setArrangement(Lorg/jfree/chart/block/Arrangement;)V 0.0, lineNumber=122, susp=0.10206207261596577]
+2017-01-31 22:01:48,106 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.JFreeChart, methodName=org.jfree.chart.JFreeChart{notifyListeners(Lorg/jfree/chart/event/ChartProgressEvent;)V 0.0, lineNumber=1546, susp=0.10206207261596577]
+2017-01-31 22:01:48,195 INFO main - -any mod point created for suspicious Candidate [className=org.jfree.chart.block.BlockContainer, methodName=org.jfree.chart.block.BlockContainer{clear()V 0.0, lineNumber=170, susp=0.10127393670836667]
+2017-01-31 22:01:48,246 INFO main - Total suspicious from FL: 515,  469
+2017-01-31 22:01:48,246 INFO main - Total ModPoint created: 469
+2017-01-31 22:01:48,247 INFO main - Creating program variant #1, [Variant id: 1, #gens: 469, #ops: 0, parent:-]
+2017-01-31 22:01:49,412 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2017-01-31 22:01:49,412 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2017-01-31 22:01:49,413 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= org.jfree
+2017-01-31 22:01:49,413 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
+2017-01-31 22:01:49,413 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2017-01-31 22:01:49,413 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2017-01-31 22:01:49,413 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= org.apache.commons.math.ode.nonstiff:org.apache.commons.math.ode2.nonstiff:org.apache.commons.lang.LocaleUtilsTest:org.jfree.chart.plot.DiffTGen0Test
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= statement-remove
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= true
+2017-01-31 22:01:49,414 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2017-01-31 22:01:49,415 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testcasesregression= org.jfree.data.junit.KeyedObjects2DTests:org.jfree.data.time.junit.TimePeriodValueTests:org.jfree.data.xy.junit.VectorSeriesTests:org.jfree.chart.axis.junit.LogarithmicAxisTests:org.jfree.chart.entity.junit.CategoryItemEntityTests:org.jfree.chart.axis.junit.CategoryAxisTests:org.jfree.chart.plot.junit.ValueMarkerTests:org.jfree.chart.block.junit.ColumnArrangementTests:org.jfree.data.gantt.junit.TaskTests:org.jfree.chart.renderer.xy.junit.StackedXYBarRendererTests:org.jfree.data.junit.DefaultKeyedValuesTests:org.jfree.chart.plot.junit.CompassPlotTests:org.jfree.chart.junit.LineChart3DTests:org.jfree.data.general.junit.DefaultKeyedValuesDatasetTests:org.jfree.data.xy.junit.DefaultXYZDatasetTests:org.jfree.data.xy.junit.MatrixSeriesTests:org.jfree.data.category.junit.DefaultCategoryDatasetTests:org.jfree.chart.labels.junit.StandardXYSeriesLabelGeneratorTests:org.jfree.chart.renderer.xy.junit.AbstractXYItemRendererTests:org.jfree.chart.renderer.xy.junit.CandlestickRendererTests:org.jfree.chart.renderer.xy.junit.ClusteredXYBarRendererTests:org.jfree.chart.renderer.xy.junit.DeviationRendererTests:org.jfree.chart.renderer.xy.junit.HighLowRendererTests:org.jfree.chart.renderer.xy.junit.StackedXYAreaRendererTests:org.jfree.chart.renderer.xy.junit.StackedXYAreaRenderer2Tests:org.jfree.chart.renderer.xy.junit.StandardXYItemRendererTests:org.jfree.chart.renderer.xy.junit.VectorRendererTests:org.jfree.chart.renderer.xy.junit.WindItemRendererTests:org.jfree.chart.renderer.xy.junit.XYAreaRendererTests:org.jfree.chart.renderer.xy.junit.XYAreaRenderer2Tests:org.jfree.chart.renderer.xy.junit.XYBarRendererTests:org.jfree.chart.renderer.xy.junit.XYBlockRendererTests:org.jfree.chart.renderer.xy.junit.XYBoxAndWhiskerRendererTests:org.jfree.chart.renderer.xy.junit.XYBubbleRendererTests:org.jfree.chart.renderer.xy.junit.XYDifferenceRendererTests:org.jfree.chart.renderer.xy.junit.XYDotRendererTests:org.jfree.chart.renderer.xy.junit.XYErrorRendererTests:org.jfree.chart.renderer.xy.junit.XYLineAndShapeRendererTests:org.jfree.chart.renderer.xy.junit.XYLine3DRendererTests:org.jfree.chart.renderer.xy.junit.XYSplineAndShapeRendererTests:org.jfree.chart.renderer.xy.junit.XYStepRendererTests:org.jfree.chart.renderer.xy.junit.XYStepAreaRendererTests:org.jfree.chart.renderer.xy.junit.YIntervalRendererTests:org.jfree.chart.title.junit.LegendTitleTests:org.jfree.data.xy.junit.YIntervalSeriesCollectionTests:org.jfree.chart.annotations.junit.CategoryLineAnnotationTests:org.jfree.chart.annotations.junit.CategoryPointerAnnotationTests:org.jfree.chart.annotations.junit.CategoryTextAnnotationTests:org.jfree.chart.annotations.junit.TextAnnotationTests:org.jfree.chart.annotations.junit.XYBoxAnnotationTests:org.jfree.chart.annotations.junit.XYDrawableAnnotationTests:org.jfree.chart.annotations.junit.XYImageAnnotationTests:org.jfree.chart.annotations.junit.XYLineAnnotationTests:org.jfree.chart.annotations.junit.XYPointerAnnotationTests:org.jfree.chart.annotations.junit.XYPolygonAnnotationTests:org.jfree.chart.annotations.junit.XYShapeAnnotationTests:org.jfree.chart.annotations.junit.XYTextAnnotationTests:org.jfree.chart.labels.junit.StandardXYToolTipGeneratorTests:org.jfree.data.time.junit.MinuteTests:org.jfree.data.xy.junit.DefaultOHLCDatasetTests:org.jfree.chart.needle.junit.LongNeedleTests:org.jfree.data.xy.junit.OHLCDataItemTests:org.jfree.chart.junit.XYBarChartTests:org.jfree.data.time.ohlc.junit.OHLCItemTests:org.jfree.data.time.ohlc.junit.OHLCSeriesCollectionTests:org.jfree.data.time.ohlc.junit.OHLCSeriesTests:org.jfree.data.time.ohlc.junit.OHLCTests:org.jfree.chart.axis.junit.NumberAxis3DTests:org.jfree.data.xy.junit.XIntervalDataItemTests:org.jfree.data.xy.junit.DefaultTableXYDatasetTests:org.jfree.data.xy.junit.XYIntervalSeriesTests:org.jfree.data.time.junit.TimePeriodAnchorTests:org.jfree.chart.needle.junit.LineNeedleTests:org.jfree.chart.labels.junit.HighLowItemLabelGeneratorTests:org.jfree.chart.title.junit.CompositeTitleTests:org.jfree.data.xy.junit.XYCoordinateTests:org.jfree.chart.plot.junit.DefaultDrawingSupplierTests:org.jfree.chart.plot.junit.XYPlotTests:org.jfree.chart.plot.junit.CombinedRangeCategoryPlotTests:org.jfree.chart.title.junit.ImageTitleTests:org.jfree.chart.junit.AreaChartTests:org.jfree.chart.junit.BarChartTests:org.jfree.chart.junit.BarChart3DTests:org.jfree.chart.junit.ChartPanelTests:org.jfree.chart.junit.ChartRenderingInfoTests:org.jfree.chart.junit.GanttChartTests:org.jfree.chart.junit.JFreeChartTests:org.jfree.chart.junit.LegendItemTests:org.jfree.chart.junit.LegendItemCollectionTests:org.jfree.chart.junit.LineChartTests:org.jfree.chart.junit.MeterChartTests:org.jfree.chart.junit.PaintMapTests:org.jfree.chart.junit.PieChartTests:org.jfree.chart.junit.PieChart3DTests:org.jfree.chart.junit.ScatterPlotTests:org.jfree.chart.junit.StackedAreaChartTests:org.jfree.chart.junit.StackedBarChartTests:org.jfree.chart.junit.StackedBarChart3DTests:org.jfree.chart.junit.StrokeMapTests:org.jfree.chart.junit.TimeSeriesChartTests:org.jfree.chart.junit.WaterfallChartTests:org.jfree.chart.junit.XYAreaChartTests:org.jfree.chart.junit.XYLineChartTests:org.jfree.chart.junit.XYStepAreaChartTests:org.jfree.chart.junit.XYStepChartTests:org.jfree.chart.axis.junit.StandardTickUnitSourceTests:org.jfree.chart.plot.junit.MultiplePiePlotTests:org.jfree.chart.labels.junit.MultipleXYSeriesLabelGeneratorTests:org.jfree.data.time.junit.TimeSeriesDataItemTests:org.jfree.chart.plot.junit.CategoryPlotTests:org.jfree.chart.axis.junit.CategoryTickTests:org.jfree.data.statistics.junit.SimpleHistogramBinTests:org.jfree.chart.renderer.junit.LookupPaintScaleTests:org.jfree.chart.labels.junit.SymbolicXYItemLabelGeneratorTests:org.jfree.chart.needle.junit.PlumNeedleTests:org.jfree.chart.renderer.category.junit.DefaultCategoryItemRendererTests:org.jfree.data.time.junit.DateRangeTests:org.jfree.data.time.junit.DayTests:org.jfree.data.time.junit.FixedMillisecondTests:org.jfree.data.time.junit.HourTests:org.jfree.data.time.junit.MillisecondTests:org.jfree.data.time.junit.MonthTests:org.jfree.data.time.junit.MovingAverageTests:org.jfree.data.time.junit.QuarterTests:org.jfree.data.time.junit.SecondTests:org.jfree.data.time.junit.SimpleTimePeriodTests:org.jfree.data.time.junit.TimePeriodValuesTests:org.jfree.data.time.junit.TimePeriodValuesCollectionTests:org.jfree.data.time.junit.TimeSeriesCollectionTests:org.jfree.data.time.junit.TimeSeriesTests:org.jfree.data.time.junit.TimeTableXYDatasetTests:org.jfree.data.time.junit.WeekTests:org.jfree.data.time.junit.YearTests:org.jfree.chart.labels.junit.BoxAndWhiskerXYToolTipGeneratorTests:org.jfree.chart.util.junit.HashUtilitiesTests:org.jfree.chart.renderer.category.junit.WaterfallBarRendererTests:org.jfree.chart.axis.junit.CategoryAxis3DTests:org.jfree.chart.axis.junit.DateTickMarkPositionTests:org.jfree.chart.axis.junit.LogAxisTests:org.jfree.chart.block.junit.GridArrangementTests:org.jfree.chart.axis.junit.SegmentedTimelineTests:org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests:org.jfree.chart.renderer.category.junit.LevelRendererTests:org.jfree.data.junit.DefaultKeyedValueTests:org.jfree.chart.axis.junit.SegmentedTimelineTests2:org.jfree.data.junit.RangeTests:org.jfree.chart.renderer.category.junit.GanttRendererTests:org.jfree.data.xy.junit.VectorSeriesCollectionTests:org.jfree.chart.entity.junit.StandardEntityCollectionTests:org.jfree.chart.entity.junit.TickLabelEntityTests:org.jfree.data.xy.junit.XYSeriesTests:org.jfree.chart.renderer.category.junit.ScatterRendererTests:org.jfree.chart.labels.junit.StandardXYItemLabelGeneratorTests:org.jfree.data.general.junit.DatasetGroupTests:org.jfree.chart.plot.dial.junit.ArcDialFrameTests:org.jfree.chart.axis.junit.NumberTickUnitTests:org.jfree.chart.renderer.junit.GrayPaintScaleTests:org.jfree.chart.block.junit.EmptyBlockTests:org.jfree.chart.plot.junit.PlotOrientationTests:org.jfree.chart.plot.junit.CategoryMarkerTests:org.jfree.data.category.junit.CategoryToPieDatasetTests:org.jfree.chart.labels.junit.StandardPieSectionLabelGeneratorTests:org.jfree.chart.labels.junit.StandardCategoryItemLabelGeneratorTests:org.jfree.chart.renderer.junit.RendererUtilitiesTests:org.jfree.chart.plot.dial.junit.DialBackgroundTests:org.jfree.data.junit.KeyToGroupMapTests:org.jfree.data.xy.junit.XYIntervalTests:org.jfree.chart.plot.dial.junit.DialTextAnnotationTests:org.jfree.chart.axis.junit.ValueAxisTests:org.jfree.chart.needle.junit.PointerNeedleTests:org.jfree.chart.urls.junit.TimeSeriesURLGeneratorTests:org.jfree.chart.plot.junit.RingPlotTests:org.jfree.data.junit.ComparableObjectItemTests:org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests:org.jfree.chart.plot.dial.junit.DialPointerTests:org.jfree.chart.renderer.category.junit.LineRenderer3DTests:org.jfree.data.junit.KeyedObjectsTests:org.jfree.data.statistics.junit.DefaultMultiValueCategoryDatasetTests:org.jfree.chart.plot.dial.junit.AbstractDialLayerTests:org.jfree.chart.plot.dial.junit.DialCapTests:org.jfree.chart.plot.dial.junit.DialPlotTests:org.jfree.chart.plot.dial.junit.DialValueIndicatorTests:org.jfree.chart.plot.dial.junit.StandardDialFrameTests:org.jfree.chart.plot.dial.junit.StandardDialRangeTests:org.jfree.chart.plot.dial.junit.StandardDialScaleTests:org.jfree.chart.plot.junit.CombinedDomainCategoryPlotTests:org.jfree.chart.axis.junit.NumberAxisTests:org.jfree.chart.axis.junit.AxisTests:org.jfree.chart.plot.junit.MeterIntervalTests:org.jfree.chart.renderer.category.junit.BarRendererTests:org.jfree.chart.urls.junit.CustomXYURLGeneratorTests:org.jfree.data.general.junit.DatasetUtilitiesTests:org.jfree.data.general.junit.DefaultKeyedValueDatasetTests:org.jfree.data.general.junit.DefaultKeyedValues2DDatasetTests:org.jfree.data.general.junit.DefaultPieDatasetTests:org.jfree.chart.axis.junit.CyclicNumberAxisTests:org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests:org.jfree.chart.renderer.category.junit.AreaRendererTests:org.jfree.chart.renderer.category.junit.BarRenderer3DTests:org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests:org.jfree.chart.renderer.category.junit.CategoryStepRendererTests:org.jfree.chart.renderer.category.junit.GroupedStackedBarRendererTests:org.jfree.chart.renderer.category.junit.IntervalBarRendererTests:org.jfree.chart.renderer.category.junit.LayeredBarRendererTests:org.jfree.chart.renderer.category.junit.LineAndShapeRendererTests:org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests:org.jfree.chart.renderer.category.junit.StackedAreaRendererTests:org.jfree.chart.renderer.category.junit.StackedBarRendererTests:org.jfree.chart.renderer.category.junit.StackedBarRenderer3DTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.data.xy.junit.YIntervalDataItemTests:org.jfree.chart.axis.junit.TickUnitsTests:org.jfree.chart.util.junit.BooleanListTests:org.jfree.data.statistics.junit.BoxAndWhiskerCalculatorTests:org.jfree.chart.block.junit.ColorBlockTests:org.jfree.chart.axis.junit.DateAxisTests:org.jfree.data.xy.junit.VectorTests:org.jfree.chart.renderer.junit.DefaultPolarItemRendererTests:org.jfree.chart.util.junit.RelativeDateFormatTests:org.jfree.chart.axis.junit.DateTickUnitTests:org.jfree.chart.util.junit.PaintListTests:org.jfree.data.statistics.junit.HistogramBinTests:org.jfree.chart.plot.junit.IntervalMarkerTests:org.jfree.chart.urls.junit.StandardXYURLGeneratorTests:org.jfree.chart.title.junit.DateTitleTests:org.jfree.chart.plot.junit.PieLabelRecordTests:org.jfree.chart.axis.junit.PeriodAxisTests:org.jfree.chart.block.junit.AbstractBlockTests:org.jfree.data.xy.junit.YIntervalSeriesTests:org.jfree.chart.block.junit.LabelBlockTests:org.jfree.data.statistics.junit.SimpleHistogramDatasetTests:org.jfree.chart.plot.DiffTGen0Test:org.jfree.chart.util.junit.StrokeListTests:org.jfree.data.gantt.junit.TaskSeriesTests:org.jfree.data.xy.junit.CategoryTableXYDatasetTests:org.jfree.data.xy.junit.DefaultHighLowDatasetTests:org.jfree.data.xy.junit.DefaultIntervalXYDatasetTests:org.jfree.data.xy.junit.DefaultWindDatasetTests:org.jfree.data.xy.junit.DefaultXYDatasetTests:org.jfree.data.xy.junit.IntervalXYDelegateTests:org.jfree.data.xy.junit.MatrixSeriesCollectionTests:org.jfree.data.xy.junit.TableXYDatasetTests:org.jfree.data.xy.junit.VectorDataItemTests:org.jfree.data.xy.junit.XIntervalSeriesCollectionTests:org.jfree.data.xy.junit.XIntervalSeriesTests:org.jfree.data.xy.junit.XYBarDatasetTests:org.jfree.data.xy.junit.XYDataItemTests:org.jfree.data.xy.junit.XYIntervalDataItemTests:org.jfree.data.xy.junit.XYIntervalSeriesCollectionTests:org.jfree.data.xy.junit.XYSeriesCollectionTests:org.jfree.data.xy.junit.YIntervalTests:org.jfree.data.xy.junit.YWithXIntervalTests:org.jfree.chart.needle.junit.ArrowNeedleTests:org.jfree.chart.needle.junit.MeterNeedleTests:org.jfree.chart.needle.junit.MiddlePinNeedleTests:org.jfree.chart.needle.junit.PinNeedleTests:org.jfree.chart.needle.junit.ShipNeedleTests:org.jfree.chart.needle.junit.WindNeedleTests:org.jfree.data.statistics.junit.HistogramDatasetTests:org.jfree.chart.block.junit.LineBorderTests:org.jfree.chart.title.junit.LegendGraphicTests:org.jfree.chart.axis.junit.AxisLocationTests:org.jfree.chart.block.junit.RectangleConstraintTests:org.jfree.chart.plot.junit.PolarPlotTests:org.jfree.chart.axis.junit.CategoryLabelWidthTypeTests:org.jfree.chart.axis.junit.AxisSpaceTests:org.jfree.chart.axis.junit.CategoryAnchorTests:org.jfree.chart.axis.junit.CategoryLabelPositionTests:org.jfree.chart.axis.junit.CategoryLabelPositionsTests:org.jfree.chart.axis.junit.DateTickTests:org.jfree.chart.axis.junit.ExtendedCategoryAxisTests:org.jfree.chart.axis.junit.MarkerAxisBandTests:org.jfree.chart.axis.junit.MonthDateFormatTests:org.jfree.chart.axis.junit.PeriodAxisLabelInfoTests:org.jfree.chart.axis.junit.QuarterDateFormatTests:org.jfree.chart.axis.junit.SubCategoryAxisTests:org.jfree.chart.axis.junit.SymbolAxisTests:org.jfree.chart.plot.junit.MarkerTests:org.jfree.data.junit.ComparableObjectSeriesTests:org.jfree.chart.labels.junit.StandardCategoryToolTipGeneratorTests:org.jfree.data.gantt.junit.TaskSeriesCollectionTests:org.jfree.chart.plot.junit.CombinedRangeXYPlotTests:org.jfree.data.statistics.junit.BoxAndWhiskerItemTests:org.jfree.chart.labels.junit.BubbleXYItemLabelGeneratorTests:org.jfree.chart.entity.junit.PieSectionEntityTests:org.jfree.chart.plot.junit.FastScatterPlotTests:org.jfree.chart.plot.junit.SpiderWebPlotTests:org.jfree.chart.urls.junit.StandardPieURLGeneratorTests:org.jfree.chart.renderer.junit.AbstractRendererTests:org.jfree.chart.renderer.junit.AreaRendererEndTypeTests:org.jfree.chart.renderer.junit.OutlierTests:org.jfree.chart.labels.junit.StandardPieToolTipGeneratorTests:org.jfree.chart.plot.junit.MeterPlotTests:org.jfree.data.junit.DataUtilitiesTests:org.jfree.chart.block.junit.BlockContainerTests:org.jfree.data.junit.RangeTypeTests:org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests:org.jfree.chart.labels.junit.BoxAndWhiskerToolTipGeneratorTests:org.jfree.chart.entity.junit.LegendItemEntityTests:org.jfree.chart.entity.junit.XYItemEntityTests:org.jfree.chart.title.junit.TitleTests:org.jfree.chart.urls.junit.StandardCategoryURLGeneratorTests:org.jfree.chart.title.junit.PaintScaleLegendTests:org.jfree.data.junit.KeyedObjectTests:org.jfree.chart.labels.junit.ItemLabelAnchorTests:org.jfree.chart.block.junit.FlowArrangementTests:org.jfree.chart.plot.junit.PiePlot3DTests:org.jfree.chart.title.junit.TextTitleTests:org.jfree.data.junit.DomainOrderTests:org.jfree.chart.block.junit.BorderArrangementTests:org.jfree.chart.block.junit.BlockBorderTests:org.jfree.data.junit.DefaultKeyedValues2DTests:org.jfree.chart.labels.junit.CustomXYItemLabelGeneratorTests:org.jfree.chart.labels.junit.IntervalCategoryLabelGeneratorTests:org.jfree.chart.labels.junit.ItemLabelPositionTests:org.jfree.chart.labels.junit.StandardCategorySeriesLabelGeneratorTests:org.jfree.chart.labels.junit.StandardXYZToolTipGeneratorTests:org.jfree.chart.plot.junit.PlotRenderingInfoTests:org.jfree.data.statistics.junit.MeanAndStandardDeviationTests:org.jfree.data.statistics.junit.RegressionTests:org.jfree.chart.plot.junit.PlotTests:org.jfree.data.statistics.junit.DefaultStatisticalCategoryDatasetTests:org.jfree.data.statistics.junit.StatisticsTests:org.jfree.chart.plot.junit.ThermometerPlotTests:org.jfree.chart.plot.junit.CombinedDomainXYPlotTests:org.jfree.chart.plot.junit.PiePlotTests:
+2017-01-31 22:01:49,416 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2017-01-31 22:01:49,416 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:executeRegression= true
+2017-01-31 22:01:49,416 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2017-01-31 22:01:49,416 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 120
+2017-01-31 22:01:49,416 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /data/people/qx5/repsystem2/repair0/Chart_15_jKali
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /home/qx5/jdk1.8.0_111/bin
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= Chart_15
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2017-01-31 22:01:49,417 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /home/qx5/jdk1.8.0_111/bin
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= /data/people/qx5/repsystem2/repair0/Chart_15_jKali/all0.jar:/data/people/qx5/testgen/lib/commons-lang3-3.5.jar:/data/people/qx5/testgen/lib/myprinter.jar:/data/people/qx5/testgen/lib/evosuite-1.0.2.jar
+2017-01-31 22:01:49,418 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:failing= org.jfree.chart.plot.junit.PiePlot3DTests
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2017-01-31 22:01:49,419 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/main/
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2017-01-31 22:01:49,420 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2017-01-31 22:01:49,423 INFO main - mod_point ModificPoint=DatasetUtilities line: 153, el: CtThrowImpl
+2017-01-31 22:01:49,424 INFO main - -->op: RemoveOp: `throw new java.lang.Illeg[...] ` ---> `-` at pos 0 of parent `{ 	throw new java.lang.Il[...]`
+2017-01-31 22:02:00,121 INFO main - mod_point ModificPoint=PiePlot line: 2613, el: CtReturnImpl
+2017-01-31 22:02:00,121 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 0 of parent `{ 	return result; }`
+2017-01-31 22:02:04,577 INFO main - mod_point ModificPoint=PiePlot line: 670, el: CtReturnImpl
+2017-01-31 22:02:04,577 INFO main - -->op: RemoveOp: `return org.jfree.chart.pl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:02:07,502 INFO main - mod_point ModificPoint=PiePlot line: 1398, el: CtReturnImpl
+2017-01-31 22:02:07,502 INFO main - -->op: RemoveOp: `return org.jfree.chart.pl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:02:10,374 INFO main - mod_point ModificPoint=PiePlot line: 1423, el: CtReturnImpl
+2017-01-31 22:02:10,375 INFO main - -->op: RemoveOp: `return org.jfree.chart.pl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:02:13,084 INFO main - mod_point ModificPoint=PiePlot line: 1448, el: CtReturnImpl
+2017-01-31 22:02:13,086 INFO main - -->op: RemoveOp: `return org.jfree.chart.pl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:02:15,731 INFO main - mod_point ModificPoint=PiePlot3D line: 230, el: CtInvocationImpl
+2017-01-31 22:02:15,731 INFO main - -->op: RemoveOp: `notifyListeners(new org.j[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:02:19,713 INFO main - mod_point ModificPoint=PiePlot3D line: 252, el: CtInvocationImpl
+2017-01-31 22:02:19,717 INFO main - -->op: RemoveOp: `insets.trim(plotArea) ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:02:23,931 INFO main - mod_point ModificPoint=PiePlot3D line: 266, el: CtLocalVariableImpl
+2017-01-31 22:02:23,934 INFO main - -->op: RemoveOp: `double gapPercent = getIn[...] ` ---> `-` at pos 7 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:02:26,490 INFO main - mod_point ModificPoint=PiePlot3D line: 267, el: CtLocalVariableImpl
+2017-01-31 22:02:26,493 INFO main - -->op: RemoveOp: `double labelPercent = 0.0 ` ---> `-` at pos 8 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:02:29,093 INFO main - mod_point ModificPoint=PiePlot3D line: 268, el: CtIfImpl
+2017-01-31 22:02:29,096 INFO main - -->op: ReplaceIfBooleanOp: `if ((getLabelGenerator())[...] ` ---> `if (true) { 	labelPercent[...]` at pos 9 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:02:33,004 INFO main - mod_point ModificPoint=PiePlot3D line: 268, el: CtIfImpl
+2017-01-31 22:02:33,007 INFO main - -->op: ReplaceIfBooleanOp: `if ((getLabelGenerator())[...] ` ---> `if (false) { 	labelPercen[...]` at pos 9 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:02:36,908 INFO main - mod_point ModificPoint=PiePlot3D line: 268, el: CtIfImpl
+2017-01-31 22:02:36,911 INFO main - -->op: RemoveOp: `if ((getLabelGenerator())[...] ` ---> `-` at pos 9 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:02:40,822 INFO main - mod_point ModificPoint=PiePlot3D line: 269, el: CtAssignmentImpl
+2017-01-31 22:02:40,822 INFO main - -->op: RemoveOp: `labelPercent = (getLabelG[...] ` ---> `-` at pos 0 of parent `{ 	labelPercent = (getLab[...]`
+2017-01-31 22:02:44,624 INFO main - mod_point ModificPoint=PiePlot3D line: 280, el: CtLocalVariableImpl
+2017-01-31 22:02:44,625 INFO main - -->op: RemoveOp: `double igy1 = (plotArea.g[...] ` ---> `-` at pos 4 of parent `{ 	double hGap = (plotAre[...]`
+2017-01-31 22:02:47,129 INFO main - mod_point ModificPoint=PiePlot line: 706, el: CtReturnImpl
+2017-01-31 22:02:47,129 INFO main - -->op: RemoveOp: `return org.jfree.chart.pl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:02:49,627 INFO main - mod_point ModificPoint=PiePlot line: 2049, el: CtLocalVariableImpl
+2017-01-31 22:02:49,627 INFO main - -->op: RemoveOp: `org.jfree.chart.plot.PieP[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:02:52,087 INFO main - mod_point ModificPoint=PiePlot line: 2050, el: CtInvocationImpl
+2017-01-31 22:02:52,087 INFO main - -->op: RemoveOp: `state.setPassesRequired(2[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:02:55,755 INFO main - mod_point ModificPoint=PiePlot line: 2051, el: CtInvocationImpl
+2017-01-31 22:02:55,756 INFO main - -->op: RemoveOp: `state.setTotal(org.jfree.[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:02:59,697 INFO main - mod_point ModificPoint=PiePlotState line: 109, el: CtAssignmentImpl
+2017-01-31 22:02:59,697 INFO main - -->op: RemoveOp: `org.jfree.chart.plot.PieP[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:03,370 INFO main - mod_point ModificPoint=ChartFactory line: 694, el: CtLocalVariableImpl
+2017-01-31 22:03:03,370 INFO main - -->op: RemoveOp: `org.jfree.chart.plot.PieP[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:05,802 INFO main - mod_point ModificPoint=ChartFactory line: 695, el: CtInvocationImpl
+2017-01-31 22:03:05,802 INFO main - -->op: RemoveOp: `plot.setInsets(new org.jf[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:09,631 INFO main - mod_point ModificPoint=ChartFactory line: 696, el: CtIfImpl
+2017-01-31 22:03:09,631 INFO main - -->op: ReplaceIfBooleanOp: `if (tooltips) { 	plot.set[...] ` ---> `if (true) { 	plot.setTool[...]` at pos 2 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:13,835 INFO main - mod_point ModificPoint=ChartFactory line: 696, el: CtIfImpl
+2017-01-31 22:03:13,835 INFO main - -->op: ReplaceIfBooleanOp: `if (tooltips) { 	plot.set[...] ` ---> `if (false) { 	plot.setToo[...]` at pos 2 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:17,530 INFO main - mod_point ModificPoint=ChartFactory line: 696, el: CtIfImpl
+2017-01-31 22:03:17,531 INFO main - -->op: RemoveOp: `if (tooltips) { 	plot.set[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:21,515 INFO main - mod_point ModificPoint=ChartFactory line: 699, el: CtIfImpl
+2017-01-31 22:03:21,515 INFO main - -->op: ReplaceIfBooleanOp: `if (urls) { 	plot.setURLG[...] ` ---> `if (true) { 	plot.setURLG[...]` at pos 3 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:25,078 INFO main - mod_point ModificPoint=ChartFactory line: 699, el: CtIfImpl
+2017-01-31 22:03:25,079 INFO main - -->op: ReplaceIfBooleanOp: `if (urls) { 	plot.setURLG[...] ` ---> `if (false) { 	plot.setURL[...]` at pos 3 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:28,686 INFO main - mod_point ModificPoint=ChartFactory line: 699, el: CtIfImpl
+2017-01-31 22:03:28,687 INFO main - -->op: RemoveOp: `if (urls) { 	plot.setURLG[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:33,182 INFO main - mod_point ModificPoint=ChartFactory line: 702, el: CtReturnImpl
+2017-01-31 22:03:33,182 INFO main - -->op: RemoveOp: `return new org.jfree.char[...] ` ---> `-` at pos 4 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:03:35,566 INFO main - mod_point ModificPoint=PiePlot line: 2611, el: CtLocalVariableImpl
+2017-01-31 22:03:35,567 INFO main - -->op: RemoveOp: `org.jfree.chart.LegendIte[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:03:37,954 INFO main - mod_point ModificPoint=PiePlot line: 2612, el: CtIfImpl
+2017-01-31 22:03:37,956 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.plot[...] ` ---> `if (true) { 	return resul[...]` at pos 1 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:03:41,738 INFO main - mod_point ModificPoint=PiePlot line: 2612, el: CtIfImpl
+2017-01-31 22:03:41,739 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.plot[...] ` ---> `if (false) { 	return resu[...]` at pos 1 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:03:45,506 INFO main - mod_point ModificPoint=PiePlot line: 2612, el: CtIfImpl
+2017-01-31 22:03:45,508 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.plot[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:03:50,004 INFO main - mod_point ModificPoint=Plot line: 931, el: CtInvocationImpl
+2017-01-31 22:03:50,004 INFO main - -->op: RemoveOp: `fillBackground(g2, area) ` ---> `-` at pos 0 of parent `{ 	fillBackground(g2, are[...]`
+2017-01-31 22:03:53,770 INFO main - mod_point ModificPoint=Plot line: 932, el: CtInvocationImpl
+2017-01-31 22:03:53,771 INFO main - -->op: RemoveOp: `drawBackgroundImage(g2, a[...] ` ---> `-` at pos 1 of parent `{ 	fillBackground(g2, are[...]`
+2017-01-31 22:03:57,458 INFO main - mod_point ModificPoint=Plot line: 946, el: CtInvocationImpl
+2017-01-31 22:03:57,459 INFO main - -->op: RemoveOp: `fillBackground(g2, area, [...] ` ---> `-` at pos 0 of parent `{ 	fillBackground(g2, are[...]`
+2017-01-31 22:04:01,248 INFO main - mod_point ModificPoint=PiePlot line: 551, el: CtReturnImpl
+2017-01-31 22:04:01,248 INFO main - -->op: RemoveOp: `return org.jfree.chart.pl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:04:03,638 INFO main - mod_point ModificPoint=DatasetUtilities line: 152, el: CtIfImpl
+2017-01-31 22:04:03,638 INFO main - -->op: ReplaceIfBooleanOp: `if (dataset == null) { 	t[...] ` ---> `if (true) { 	throw new ja[...]` at pos 0 of parent `{ 	if (dataset == null) {[...]`
+2017-01-31 22:04:08,170 INFO main - mod_point ModificPoint=DatasetUtilities line: 152, el: CtIfImpl
+2017-01-31 22:04:08,171 INFO main - -->op: ReplaceIfBooleanOp: `if (dataset == null) { 	t[...] ` ---> `if (false) { 	throw new j[...]` at pos 0 of parent `{ 	if (dataset == null) {[...]`
+2017-01-31 22:04:12,009 INFO main - mod_point ModificPoint=DatasetUtilities line: 152, el: CtIfImpl
+2017-01-31 22:04:12,010 INFO main - -->op: RemoveOp: `if (dataset == null) { 	t[...] ` ---> `-` at pos 0 of parent `{ 	if (dataset == null) {[...]`
+2017-01-31 22:04:15,844 INFO main - mod_point ModificPoint=PiePlot line: 731, el: CtAssignmentImpl
+2017-01-31 22:04:15,845 INFO main - -->op: RemoveOp: `org.jfree.chart.plot.PieP[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:04:19,734 INFO main - mod_point ModificPoint=PiePlot line: 732, el: CtIfImpl
+2017-01-31 22:04:19,734 INFO main - -->op: ReplaceIfBooleanOp: `if (notify) { 	notifyList[...] ` ---> `if (true) { 	notifyListen[...]` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:04:23,466 INFO main - mod_point ModificPoint=PiePlot line: 732, el: CtIfImpl
+2017-01-31 22:04:23,467 INFO main - -->op: ReplaceIfBooleanOp: `if (notify) { 	notifyList[...] ` ---> `if (false) { 	notifyListe[...]` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:04:27,133 INFO main - mod_point ModificPoint=PiePlot line: 732, el: CtIfImpl
+2017-01-31 22:04:27,133 INFO main - -->op: RemoveOp: `if (notify) { 	notifyList[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:04:30,794 INFO main - mod_point ModificPoint=LegendTitle line: 472, el: CtReturnImpl
+2017-01-31 22:04:30,794 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 0 of parent `{ 	return result; }`
+2017-01-31 22:04:34,391 INFO main - mod_point ModificPoint=LineBorder line: 146, el: CtReturnImpl
+2017-01-31 22:04:34,391 INFO main - -->op: RemoveOp: `return  ` ---> `-` at pos 0 of parent `{ 	return ; }`
+2017-01-31 22:04:38,710 INFO main - mod_point ModificPoint=TextBlock line: 105, el: CtIfImpl
+2017-01-31 22:04:38,711 INFO main - -->op: ReplaceIfBooleanOp: `if (alignment == null) { [...] ` ---> `if (true) { 	throw new ja[...]` at pos 0 of parent `{ 	if (alignment == null)[...]`
+2017-01-31 22:04:42,372 INFO main - mod_point ModificPoint=TextBlock line: 105, el: CtIfImpl
+2017-01-31 22:04:42,373 INFO main - -->op: ReplaceIfBooleanOp: `if (alignment == null) { [...] ` ---> `if (false) { 	throw new j[...]` at pos 0 of parent `{ 	if (alignment == null)[...]`
+2017-01-31 22:04:45,946 INFO main - mod_point ModificPoint=TextBlock line: 105, el: CtIfImpl
+2017-01-31 22:04:45,946 INFO main - -->op: RemoveOp: `if (alignment == null) { [...] ` ---> `-` at pos 0 of parent `{ 	if (alignment == null)[...]`
+2017-01-31 22:04:49,643 INFO main - mod_point ModificPoint=TextBlock line: 108, el: CtAssignmentImpl
+2017-01-31 22:04:49,644 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 1 of parent `{ 	if (alignment == null)[...]`
+2017-01-31 22:04:54,628 INFO main - mod_point ModificPoint=TextUtilities line: 165, el: CtReturnImpl
+2017-01-31 22:04:54,629 INFO main - -->op: RemoveOp: `return org.jfree.chart.te[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:04:56,981 INFO main - mod_point ModificPoint=JFreeChart line: 1195, el: CtLocalVariableImpl
+2017-01-31 22:04:56,982 INFO main - -->op: RemoveOp: `org.jfree.chart.entity.En[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.entity[...]`
+2017-01-31 22:04:59,294 INFO main - mod_point ModificPoint=JFreeChart line: 1197, el: CtIfImpl
+2017-01-31 22:04:59,294 INFO main - -->op: ReplaceIfBooleanOp: `if (e != null) { 	entitie[...] ` ---> `if (true) { 	entities.add[...]` at pos 1 of parent `{ 	org.jfree.chart.entity[...]`
+2017-01-31 22:05:03,377 INFO main - mod_point ModificPoint=JFreeChart line: 1197, el: CtIfImpl
+2017-01-31 22:05:03,377 INFO main - -->op: ReplaceIfBooleanOp: `if (e != null) { 	entitie[...] ` ---> `if (false) { 	entities.ad[...]` at pos 1 of parent `{ 	org.jfree.chart.entity[...]`
+2017-01-31 22:05:07,247 INFO main - mod_point ModificPoint=JFreeChart line: 1197, el: CtIfImpl
+2017-01-31 22:05:07,247 INFO main - -->op: RemoveOp: `if (e != null) { 	entitie[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.entity[...]`
+2017-01-31 22:05:11,051 INFO main - mod_point ModificPoint=JFreeChart line: 1252, el: CtAssignmentImpl
+2017-01-31 22:05:11,051 INFO main - -->op: RemoveOp: `y = frame.getY() ` ---> `-` at pos 0 of parent `{ 	y = frame.getY(); }`
+2017-01-31 22:05:14,786 INFO main - mod_point ModificPoint=JFreeChart line: 1305, el: CtLocalVariableImpl
+2017-01-31 22:05:14,787 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:05:17,219 INFO main - mod_point ModificPoint=JFreeChart line: 1306, el: CtAssignmentImpl
+2017-01-31 22:05:17,220 INFO main - -->op: RemoveOp: `titleArea = createAligned[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:05:20,874 INFO main - mod_point ModificPoint=JFreeChart line: 1308, el: CtAssignmentImpl
+2017-01-31 22:05:20,874 INFO main - -->op: RemoveOp: `retValue = t.draw(g2, tit[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:05:24,623 INFO main - mod_point ModificPoint=JFreeChart line: 1309, el: CtInvocationImpl
+2017-01-31 22:05:24,623 INFO main - -->op: RemoveOp: `area.setRect(area.getX(),[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:05:28,218 INFO main - mod_point ModificPoint=TextTitle line: 439, el: CtLocalVariableImpl
+2017-01-31 22:05:28,219 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Rec[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:05:30,615 INFO main - mod_point ModificPoint=TextTitle line: 440, el: CtLocalVariableImpl
+2017-01-31 22:05:30,616 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Len[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:05:33,041 INFO main - mod_point ModificPoint=TextTitle line: 441, el: CtLocalVariableImpl
+2017-01-31 22:05:33,042 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Len[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:05:35,381 INFO main - mod_point ModificPoint=TextTitle line: 442, el: CtLocalVariableImpl
+2017-01-31 22:05:35,382 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:05:37,707 INFO main - mod_point ModificPoint=TextTitle line: 443, el: CtIfImpl
+2017-01-31 22:05:37,708 INFO main - -->op: ReplaceIfBooleanOp: `if (w == (org.jfree.chart[...] ` ---> `if (true) { 	if (h == (or[...]` at pos 4 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:05:41,282 INFO main - mod_point ModificPoint=TextTitle line: 443, el: CtIfImpl
+2017-01-31 22:05:41,284 INFO main - -->op: ReplaceIfBooleanOp: `if (w == (org.jfree.chart[...] ` ---> `if (false) { 	if (h == (o[...]` at pos 4 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:05:44,997 INFO main - mod_point ModificPoint=TextTitle line: 443, el: CtIfImpl
+2017-01-31 22:05:44,998 INFO main - -->op: RemoveOp: `if (w == (org.jfree.chart[...] ` ---> `-` at pos 4 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:05:48,537 INFO main - mod_point ModificPoint=TextTitle line: 454, el: CtIfImpl
+2017-01-31 22:05:48,537 INFO main - -->op: ReplaceIfBooleanOp: `if (w == (org.jfree.chart[...] ` ---> `if (true) { 	if (h == (or[...]` at pos 0 of parent `{ 	if (w == (org.jfree.ch[...]`
+2017-01-31 22:05:52,230 INFO main - mod_point ModificPoint=TextTitle line: 454, el: CtIfImpl
+2017-01-31 22:05:52,231 INFO main - -->op: ReplaceIfBooleanOp: `if (w == (org.jfree.chart[...] ` ---> `if (false) { 	if (h == (o[...]` at pos 0 of parent `{ 	if (w == (org.jfree.ch[...]`
+2017-01-31 22:05:55,890 INFO main - mod_point ModificPoint=TextTitle line: 454, el: CtIfImpl
+2017-01-31 22:05:55,890 INFO main - -->op: RemoveOp: `if (w == (org.jfree.chart[...] ` ---> `-` at pos 0 of parent `{ 	if (w == (org.jfree.ch[...]`
+2017-01-31 22:05:59,588 INFO main - mod_point ModificPoint=TextTitle line: 455, el: CtIfImpl
+2017-01-31 22:05:59,589 INFO main - -->op: ReplaceIfBooleanOp: `if (h == (org.jfree.chart[...] ` ---> `if (true) { 	throw new ja[...]` at pos 0 of parent `{ 	if (h == (org.jfree.ch[...]`
+2017-01-31 22:06:03,250 INFO main - mod_point ModificPoint=TextTitle line: 455, el: CtIfImpl
+2017-01-31 22:06:03,250 INFO main - -->op: ReplaceIfBooleanOp: `if (h == (org.jfree.chart[...] ` ---> `if (false) { 	throw new j[...]` at pos 0 of parent `{ 	if (h == (org.jfree.ch[...]`
+2017-01-31 22:06:06,885 INFO main - mod_point ModificPoint=TextTitle line: 455, el: CtIfImpl
+2017-01-31 22:06:06,886 INFO main - -->op: RemoveOp: `if (h == (org.jfree.chart[...] ` ---> `-` at pos 0 of parent `{ 	if (h == (org.jfree.ch[...]`
+2017-01-31 22:06:10,371 INFO main - mod_point ModificPoint=TextTitle line: 458, el: CtIfImpl
+2017-01-31 22:06:10,371 INFO main - -->op: ReplaceIfBooleanOp: `if (h == (org.jfree.chart[...] ` ---> `if (true) { 	contentSize [...]` at pos 0 of parent `{ 	if (h == (org.jfree.ch[...]`
+2017-01-31 22:06:13,983 INFO main - mod_point ModificPoint=TextTitle line: 458, el: CtIfImpl
+2017-01-31 22:06:13,984 INFO main - -->op: ReplaceIfBooleanOp: `if (h == (org.jfree.chart[...] ` ---> `if (false) { 	contentSize[...]` at pos 0 of parent `{ 	if (h == (org.jfree.ch[...]`
+2017-01-31 22:06:17,538 INFO main - mod_point ModificPoint=TextTitle line: 458, el: CtIfImpl
+2017-01-31 22:06:17,539 INFO main - -->op: RemoveOp: `if (h == (org.jfree.chart[...] ` ---> `-` at pos 0 of parent `{ 	if (h == (org.jfree.ch[...]`
+2017-01-31 22:06:21,110 INFO main - mod_point ModificPoint=TextTitle line: 459, el: CtAssignmentImpl
+2017-01-31 22:06:21,111 INFO main - -->op: RemoveOp: `contentSize = arrangeRR(g[...] ` ---> `-` at pos 0 of parent `{ 	contentSize = arrangeR[...]`
+2017-01-31 22:06:24,628 INFO main - mod_point ModificPoint=TextTitle line: 477, el: CtReturnImpl
+2017-01-31 22:06:24,629 INFO main - -->op: RemoveOp: `return new org.jfree.char[...] ` ---> `-` at pos 5 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:06:26,998 INFO main - mod_point ModificPoint=TextTitle line: 494, el: CtLocalVariableImpl
+2017-01-31 22:06:27,000 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Rect[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:06:29,369 INFO main - mod_point ModificPoint=TextTitle line: 495, el: CtIfImpl
+2017-01-31 22:06:29,371 INFO main - -->op: ReplaceIfBooleanOp: `if ((position == (org.jfr[...] ` ---> `if (true) { 	float maxWid[...]` at pos 1 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:06:33,178 INFO main - mod_point ModificPoint=TextTitle line: 495, el: CtIfImpl
+2017-01-31 22:06:33,180 INFO main - -->op: ReplaceIfBooleanOp: `if ((position == (org.jfr[...] ` ---> `if (false) { 	float maxWi[...]` at pos 1 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:06:37,654 INFO main - mod_point ModificPoint=TextTitle line: 495, el: CtIfImpl
+2017-01-31 22:06:37,656 INFO main - -->op: RemoveOp: `if ((position == (org.jfr[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.util.R[...]`
+2017-01-31 22:06:39,958 INFO main - mod_point ModificPoint=TextTitle line: 496, el: CtLocalVariableImpl
+2017-01-31 22:06:39,959 INFO main - -->op: RemoveOp: `float maxWidth = ((float)[...] ` ---> `-` at pos 0 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:06:42,270 INFO main - mod_point ModificPoint=TextTitle line: 497, el: CtInvocationImpl
+2017-01-31 22:06:42,271 INFO main - -->op: RemoveOp: `g2.setFont(org.jfree.char[...] ` ---> `-` at pos 1 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:06:46,177 INFO main - mod_point ModificPoint=TextTitle line: 498, el: CtAssignmentImpl
+2017-01-31 22:06:46,178 INFO main - -->op: RemoveOp: `org.jfree.chart.title.Tex[...] ` ---> `-` at pos 2 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:06:49,808 INFO main - mod_point ModificPoint=TextTitle line: 500, el: CtInvocationImpl
+2017-01-31 22:06:49,809 INFO main - -->op: RemoveOp: `org.jfree.chart.title.Tex[...] ` ---> `-` at pos 3 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:06:53,615 INFO main - mod_point ModificPoint=TextTitle line: 501, el: CtLocalVariableImpl
+2017-01-31 22:06:53,616 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 4 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:06:56,017 INFO main - mod_point ModificPoint=TextTitle line: 502, el: CtIfImpl
+2017-01-31 22:06:56,017 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.title[...] ` ---> `if (true) { 	return new o[...]` at pos 5 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:06:59,742 INFO main - mod_point ModificPoint=TextTitle line: 502, el: CtIfImpl
+2017-01-31 22:06:59,743 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.title[...] ` ---> `if (false) { 	return new [...]` at pos 5 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:07:04,150 INFO main - mod_point ModificPoint=TextTitle line: 502, el: CtIfImpl
+2017-01-31 22:07:04,150 INFO main - -->op: RemoveOp: `if (org.jfree.chart.title[...] ` ---> `-` at pos 5 of parent `{ 	float maxWidth = ((flo[...]`
+2017-01-31 22:07:06,466 INFO main - mod_point ModificPoint=TextTitle line: 506, el: CtReturnImpl
+2017-01-31 22:07:06,466 INFO main - -->op: RemoveOp: `return contentSize ` ---> `-` at pos 0 of parent `{ 	return contentSize; }`
+2017-01-31 22:07:08,859 INFO main - mod_point ModificPoint=TextTitle line: 555, el: CtIfImpl
+2017-01-31 22:07:08,860 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.titl[...] ` ---> `if (true) { 	return null;[...]` at pos 0 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:12,616 INFO main - mod_point ModificPoint=TextTitle line: 555, el: CtIfImpl
+2017-01-31 22:07:12,617 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.titl[...] ` ---> `if (false) { 	return null[...]` at pos 0 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:16,345 INFO main - mod_point ModificPoint=TextTitle line: 555, el: CtIfImpl
+2017-01-31 22:07:16,346 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.titl[...] ` ---> `-` at pos 0 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:20,066 INFO main - mod_point ModificPoint=TextTitle line: 558, el: CtAssignmentImpl
+2017-01-31 22:07:20,066 INFO main - -->op: RemoveOp: `area = trimMargin(area) ` ---> `-` at pos 1 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:23,912 INFO main - mod_point ModificPoint=TextTitle line: 559, el: CtInvocationImpl
+2017-01-31 22:07:23,913 INFO main - -->op: RemoveOp: `drawBorder(g2, area) ` ---> `-` at pos 2 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:27,864 INFO main - mod_point ModificPoint=TextTitle line: 560, el: CtIfImpl
+2017-01-31 22:07:27,865 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.title[...] ` ---> `if (true) { 	return null;[...]` at pos 3 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:31,703 INFO main - mod_point ModificPoint=TextTitle line: 560, el: CtIfImpl
+2017-01-31 22:07:31,704 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.title[...] ` ---> `if (false) { 	return null[...]` at pos 3 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:35,602 INFO main - mod_point ModificPoint=TextTitle line: 560, el: CtIfImpl
+2017-01-31 22:07:35,603 INFO main - -->op: RemoveOp: `if (org.jfree.chart.title[...] ` ---> `-` at pos 3 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:40,214 INFO main - mod_point ModificPoint=TextTitle line: 563, el: CtLocalVariableImpl
+2017-01-31 22:07:40,215 INFO main - -->op: RemoveOp: `org.jfree.chart.entity.Ch[...] ` ---> `-` at pos 4 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:42,596 INFO main - mod_point ModificPoint=TextTitle line: 564, el: CtIfImpl
+2017-01-31 22:07:42,597 INFO main - -->op: ReplaceIfBooleanOp: `if (params instanceof org[...] ` ---> `if (true) { 	org.jfree.ch[...]` at pos 5 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:46,389 INFO main - mod_point ModificPoint=TextTitle line: 564, el: CtIfImpl
+2017-01-31 22:07:46,390 INFO main - -->op: ReplaceIfBooleanOp: `if (params instanceof org[...] ` ---> `if (false) { 	org.jfree.c[...]` at pos 5 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:50,313 INFO main - mod_point ModificPoint=TextTitle line: 564, el: CtIfImpl
+2017-01-31 22:07:50,314 INFO main - -->op: RemoveOp: `if (params instanceof org[...] ` ---> `-` at pos 5 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:07:53,991 INFO main - mod_point ModificPoint=TextTitle line: 565, el: CtLocalVariableImpl
+2017-01-31 22:07:53,992 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Ent[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:07:56,304 INFO main - mod_point ModificPoint=TextTitle line: 566, el: CtIfImpl
+2017-01-31 22:07:56,304 INFO main - -->op: ReplaceIfBooleanOp: `if (p.getGenerateEntities[...] ` ---> `if (true) { 	entity = new[...]` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:08:00,038 INFO main - mod_point ModificPoint=TextTitle line: 566, el: CtIfImpl
+2017-01-31 22:08:00,038 INFO main - -->op: ReplaceIfBooleanOp: `if (p.getGenerateEntities[...] ` ---> `if (false) { 	entity = ne[...]` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:08:03,787 INFO main - mod_point ModificPoint=TextTitle line: 566, el: CtIfImpl
+2017-01-31 22:08:03,788 INFO main - -->op: RemoveOp: `if (p.getGenerateEntities[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:08:07,533 INFO main - mod_point ModificPoint=TextTitle line: 570, el: CtAssignmentImpl
+2017-01-31 22:08:07,534 INFO main - -->op: RemoveOp: `area = trimBorder(area) ` ---> `-` at pos 6 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:11,472 INFO main - mod_point ModificPoint=TextTitle line: 571, el: CtIfImpl
+2017-01-31 22:08:11,473 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.titl[...] ` ---> `if (true) { 	g2.setPaint([...]` at pos 7 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:15,211 INFO main - mod_point ModificPoint=TextTitle line: 571, el: CtIfImpl
+2017-01-31 22:08:15,212 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.titl[...] ` ---> `if (false) { 	g2.setPaint[...]` at pos 7 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:18,887 INFO main - mod_point ModificPoint=TextTitle line: 571, el: CtIfImpl
+2017-01-31 22:08:18,888 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.titl[...] ` ---> `-` at pos 7 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:22,516 INFO main - mod_point ModificPoint=TextTitle line: 575, el: CtAssignmentImpl
+2017-01-31 22:08:22,517 INFO main - -->op: RemoveOp: `area = trimPadding(area) ` ---> `-` at pos 8 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:26,386 INFO main - mod_point ModificPoint=TextTitle line: 576, el: CtLocalVariableImpl
+2017-01-31 22:08:26,387 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Rect[...] ` ---> `-` at pos 9 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:28,699 INFO main - mod_point ModificPoint=TextTitle line: 577, el: CtIfImpl
+2017-01-31 22:08:28,700 INFO main - -->op: ReplaceIfBooleanOp: `if ((position == (org.jfr[...] ` ---> `if (true) { 	drawHorizont[...]` at pos 10 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:32,306 INFO main - mod_point ModificPoint=TextTitle line: 577, el: CtIfImpl
+2017-01-31 22:08:32,307 INFO main - -->op: ReplaceIfBooleanOp: `if ((position == (org.jfr[...] ` ---> `if (false) { 	drawHorizon[...]` at pos 10 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:35,982 INFO main - mod_point ModificPoint=TextTitle line: 577, el: CtIfImpl
+2017-01-31 22:08:35,982 INFO main - -->op: RemoveOp: `if ((position == (org.jfr[...] ` ---> `-` at pos 10 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:39,667 INFO main - mod_point ModificPoint=TextTitle line: 578, el: CtInvocationImpl
+2017-01-31 22:08:39,668 INFO main - -->op: RemoveOp: `drawHorizontal(g2, area) ` ---> `-` at pos 0 of parent `{ 	drawHorizontal(g2, are[...]`
+2017-01-31 22:08:43,317 INFO main - mod_point ModificPoint=TextTitle line: 584, el: CtLocalVariableImpl
+2017-01-31 22:08:43,318 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Blo[...] ` ---> `-` at pos 11 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:45,631 INFO main - mod_point ModificPoint=TextTitle line: 585, el: CtIfImpl
+2017-01-31 22:08:45,632 INFO main - -->op: ReplaceIfBooleanOp: `if (entity != null) { 	or[...] ` ---> `if (true) { 	org.jfree.ch[...]` at pos 12 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:49,431 INFO main - mod_point ModificPoint=TextTitle line: 585, el: CtIfImpl
+2017-01-31 22:08:49,432 INFO main - -->op: ReplaceIfBooleanOp: `if (entity != null) { 	or[...] ` ---> `if (false) { 	org.jfree.c[...]` at pos 12 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:53,061 INFO main - mod_point ModificPoint=TextTitle line: 585, el: CtIfImpl
+2017-01-31 22:08:53,061 INFO main - -->op: RemoveOp: `if (entity != null) { 	or[...] ` ---> `-` at pos 12 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:57,128 INFO main - mod_point ModificPoint=TextTitle line: 590, el: CtReturnImpl
+2017-01-31 22:08:57,128 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 13 of parent `{ 	if ((org.jfree.chart.t[...]`
+2017-01-31 22:08:59,510 INFO main - mod_point ModificPoint=TextTitle line: 602, el: CtLocalVariableImpl
+2017-01-31 22:08:59,510 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 0 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:01,858 INFO main - mod_point ModificPoint=TextTitle line: 603, el: CtInvocationImpl
+2017-01-31 22:09:01,858 INFO main - -->op: RemoveOp: `g2.setFont(org.jfree.char[...] ` ---> `-` at pos 1 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:05,584 INFO main - mod_point ModificPoint=TextTitle line: 604, el: CtInvocationImpl
+2017-01-31 22:09:05,585 INFO main - -->op: RemoveOp: `g2.setPaint(org.jfree.cha[...] ` ---> `-` at pos 2 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:10,596 INFO main - mod_point ModificPoint=TextTitle line: 605, el: CtLocalVariableImpl
+2017-01-31 22:09:10,597 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 3 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:12,907 INFO main - mod_point ModificPoint=TextTitle line: 606, el: CtLocalVariableImpl
+2017-01-31 22:09:12,908 INFO main - -->op: RemoveOp: `float x = 0.0F ` ---> `-` at pos 4 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:15,234 INFO main - mod_point ModificPoint=TextTitle line: 607, el: CtLocalVariableImpl
+2017-01-31 22:09:15,234 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Hori[...] ` ---> `-` at pos 5 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:17,623 INFO main - mod_point ModificPoint=TextTitle line: 608, el: CtIfImpl
+2017-01-31 22:09:17,624 INFO main - -->op: ReplaceIfBooleanOp: `if (horizontalAlignment =[...] ` ---> `if (true) { 	x = ((float)[...]` at pos 6 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:21,187 INFO main - mod_point ModificPoint=TextTitle line: 608, el: CtIfImpl
+2017-01-31 22:09:21,188 INFO main - -->op: ReplaceIfBooleanOp: `if (horizontalAlignment =[...] ` ---> `if (false) { 	x = ((float[...]` at pos 6 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:24,861 INFO main - mod_point ModificPoint=TextTitle line: 608, el: CtIfImpl
+2017-01-31 22:09:24,862 INFO main - -->op: RemoveOp: `if (horizontalAlignment =[...] ` ---> `-` at pos 6 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:09:28,644 INFO main - mod_point ModificPoint=TextTitle line: 612, el: CtIfImpl
+2017-01-31 22:09:28,644 INFO main - -->op: ReplaceIfBooleanOp: `if (horizontalAlignment =[...] ` ---> `if (true) { 	x = ((float)[...]` at pos 0 of parent `{ 	if (horizontalAlignmen[...]`
+2017-01-31 22:09:32,233 INFO main - mod_point ModificPoint=TextTitle line: 612, el: CtIfImpl
+2017-01-31 22:09:32,234 INFO main - -->op: ReplaceIfBooleanOp: `if (horizontalAlignment =[...] ` ---> `if (false) { 	x = ((float[...]` at pos 0 of parent `{ 	if (horizontalAlignmen[...]`
+2017-01-31 22:09:35,842 INFO main - mod_point ModificPoint=TextTitle line: 612, el: CtIfImpl
+2017-01-31 22:09:35,842 INFO main - -->op: RemoveOp: `if (horizontalAlignment =[...] ` ---> `-` at pos 0 of parent `{ 	if (horizontalAlignmen[...]`
+2017-01-31 22:09:39,571 INFO main - mod_point ModificPoint=TextTitle line: 616, el: CtIfImpl
+2017-01-31 22:09:39,572 INFO main - -->op: ReplaceIfBooleanOp: `if (horizontalAlignment =[...] ` ---> `if (true) { 	x = ((float)[...]` at pos 0 of parent `{ 	if (horizontalAlignmen[...]`
+2017-01-31 22:09:43,232 INFO main - mod_point ModificPoint=TextTitle line: 616, el: CtIfImpl
+2017-01-31 22:09:43,233 INFO main - -->op: ReplaceIfBooleanOp: `if (horizontalAlignment =[...] ` ---> `if (false) { 	x = ((float[...]` at pos 0 of parent `{ 	if (horizontalAlignmen[...]`
+2017-01-31 22:09:46,829 INFO main - mod_point ModificPoint=TextTitle line: 616, el: CtIfImpl
+2017-01-31 22:09:46,829 INFO main - -->op: RemoveOp: `if (horizontalAlignment =[...] ` ---> `-` at pos 0 of parent `{ 	if (horizontalAlignmen[...]`
+2017-01-31 22:09:50,641 INFO main - mod_point ModificPoint=TextTitle line: 617, el: CtAssignmentImpl
+2017-01-31 22:09:50,641 INFO main - -->op: RemoveOp: `x = ((float)(titleArea.ge[...] ` ---> `-` at pos 0 of parent `{ 	x = ((float)(titleArea[...]`
+2017-01-31 22:09:54,307 INFO main - mod_point ModificPoint=TextTitle line: 618, el: CtAssignmentImpl
+2017-01-31 22:09:54,307 INFO main - -->op: RemoveOp: `anchor = org.jfree.chart.[...] ` ---> `-` at pos 1 of parent `{ 	x = ((float)(titleArea[...]`
+2017-01-31 22:09:57,984 INFO main - mod_point ModificPoint=TextTitle line: 620, el: CtLocalVariableImpl
+2017-01-31 22:09:57,985 INFO main - -->op: RemoveOp: `float y = 0.0F ` ---> `-` at pos 7 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:10:00,291 INFO main - mod_point ModificPoint=TextTitle line: 621, el: CtLocalVariableImpl
+2017-01-31 22:10:00,292 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Rect[...] ` ---> `-` at pos 8 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:10:02,670 INFO main - mod_point ModificPoint=TextTitle line: 622, el: CtIfImpl
+2017-01-31 22:10:02,671 INFO main - -->op: ReplaceIfBooleanOp: `if (position == (org.jfre[...] ` ---> `if (true) { 	y = ((float)[...]` at pos 9 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:10:06,404 INFO main - mod_point ModificPoint=TextTitle line: 622, el: CtIfImpl
+2017-01-31 22:10:06,405 INFO main - -->op: ReplaceIfBooleanOp: `if (position == (org.jfre[...] ` ---> `if (false) { 	y = ((float[...]` at pos 9 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:10:10,367 INFO main - mod_point ModificPoint=TextTitle line: 622, el: CtIfImpl
+2017-01-31 22:10:10,368 INFO main - -->op: RemoveOp: `if (position == (org.jfre[...] ` ---> `-` at pos 9 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:10:14,536 INFO main - mod_point ModificPoint=TextTitle line: 623, el: CtAssignmentImpl
+2017-01-31 22:10:14,536 INFO main - -->op: RemoveOp: `y = ((float)(titleArea.ge[...] ` ---> `-` at pos 0 of parent `{ 	y = ((float)(titleArea[...]`
+2017-01-31 22:10:18,231 INFO main - mod_point ModificPoint=TextTitle line: 637, el: CtInvocationImpl
+2017-01-31 22:10:18,232 INFO main - -->op: RemoveOp: `org.jfree.chart.title.Tex[...] ` ---> `-` at pos 10 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:10:22,426 INFO main - mod_point ModificPoint=Plot line: 504, el: CtInvocationImpl
+2017-01-31 22:10:22,427 INFO main - -->op: RemoveOp: `setInsets(insets, true) ` ---> `-` at pos 0 of parent `{ 	setInsets(insets, true[...]`
+2017-01-31 22:10:26,293 INFO main - mod_point ModificPoint=Plot line: 525, el: CtInvocationImpl
+2017-01-31 22:10:26,293 INFO main - -->op: RemoveOp: `notifyListeners(new org.j[...] ` ---> `-` at pos 0 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:10:30,413 INFO main - mod_point ModificPoint=Plot line: 519, el: CtIfImpl
+2017-01-31 22:10:30,414 INFO main - -->op: ReplaceIfBooleanOp: `if (insets == null) { 	th[...] ` ---> `if (true) { 	throw new ja[...]` at pos 0 of parent `{ 	if (insets == null) { [...]`
+2017-01-31 22:10:34,132 INFO main - mod_point ModificPoint=Plot line: 519, el: CtIfImpl
+2017-01-31 22:10:34,133 INFO main - -->op: ReplaceIfBooleanOp: `if (insets == null) { 	th[...] ` ---> `if (false) { 	throw new j[...]` at pos 0 of parent `{ 	if (insets == null) { [...]`
+2017-01-31 22:10:38,262 INFO main - mod_point ModificPoint=Plot line: 519, el: CtIfImpl
+2017-01-31 22:10:38,263 INFO main - -->op: RemoveOp: `if (insets == null) { 	th[...] ` ---> `-` at pos 0 of parent `{ 	if (insets == null) { [...]`
+2017-01-31 22:10:42,208 INFO main - mod_point ModificPoint=Plot line: 522, el: CtIfImpl
+2017-01-31 22:10:42,208 INFO main - -->op: ReplaceIfBooleanOp: `if (!(org.jfree.chart.plo[...] ` ---> `if (true) { 	Error in pri[...]` at pos 1 of parent `{ 	if (insets == null) { [...]`
+2017-01-31 22:10:46,081 INFO main - mod_point ModificPoint=Plot line: 522, el: CtIfImpl
+2017-01-31 22:10:46,082 INFO main - -->op: ReplaceIfBooleanOp: `if (!(org.jfree.chart.plo[...] ` ---> `if (false) { 	Error in pr[...]` at pos 1 of parent `{ 	if (insets == null) { [...]`
+2017-01-31 22:10:49,747 INFO main - mod_point ModificPoint=Plot line: 522, el: CtIfImpl
+2017-01-31 22:10:49,748 INFO main - -->op: RemoveOp: `if (!(org.jfree.chart.plo[...] ` ---> `-` at pos 1 of parent `{ 	if (insets == null) { [...]`
+2017-01-31 22:10:53,426 INFO main - mod_point ModificPoint=Plot line: 523, el: CtAssignmentImpl
+2017-01-31 22:10:53,427 INFO main - -->op: RemoveOp: `org.jfree.chart.plot.Plot[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:10:57,136 INFO main - mod_point ModificPoint=Plot line: 524, el: CtIfImpl
+2017-01-31 22:10:57,136 INFO main - -->op: ReplaceIfBooleanOp: `if (notify) { 	notifyList[...] ` ---> `if (true) { 	notifyListen[...]` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:11:00,822 INFO main - mod_point ModificPoint=Plot line: 524, el: CtIfImpl
+2017-01-31 22:11:00,823 INFO main - -->op: ReplaceIfBooleanOp: `if (notify) { 	notifyList[...] ` ---> `if (false) { 	notifyListe[...]` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:11:04,512 INFO main - mod_point ModificPoint=Plot line: 524, el: CtIfImpl
+2017-01-31 22:11:04,513 INFO main - -->op: RemoveOp: `if (notify) { 	notifyList[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.plot.P[...]`
+2017-01-31 22:11:08,461 INFO main - mod_point ModificPoint=BlockResult line: 67, el: CtReturnImpl
+2017-01-31 22:11:08,461 INFO main - -->op: RemoveOp: `return org.jfree.chart.bl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:11:10,904 INFO main - mod_point ModificPoint=JFreeChart line: 1343, el: CtLocalVariableImpl
+2017-01-31 22:11:10,905 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Ent[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:11:13,199 INFO main - mod_point ModificPoint=JFreeChart line: 1344, el: CtAssignmentImpl
+2017-01-31 22:11:13,199 INFO main - -->op: RemoveOp: `result = ebr.getEntityCol[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:11:16,780 INFO main - mod_point ModificPoint=RectangleInsets line: 192, el: CtReturnImpl
+2017-01-31 22:11:16,781 INFO main - -->op: RemoveOp: `return false ` ---> `-` at pos 0 of parent `{ 	return false; }`
+2017-01-31 22:11:20,501 INFO main - mod_point ModificPoint=TextBlock line: 274, el: CtAssignmentImpl
+2017-01-31 22:11:20,502 INFO main - -->op: RemoveOp: `xAdj = ((float)(-width)) [...] ` ---> `-` at pos 0 of parent `{ 	xAdj = ((float)(-width[...]`
+2017-01-31 22:11:24,210 INFO main - mod_point ModificPoint=G2TextMeasurer line: 75, el: CtLocalVariableImpl
+2017-01-31 22:11:24,211 INFO main - -->op: RemoveOp: `java.awt.FontMetrics fm =[...] ` ---> `-` at pos 0 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:11:26,480 INFO main - mod_point ModificPoint=G2TextMeasurer line: 76, el: CtLocalVariableImpl
+2017-01-31 22:11:26,480 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 1 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:11:28,858 INFO main - mod_point ModificPoint=G2TextMeasurer line: 78, el: CtLocalVariableImpl
+2017-01-31 22:11:28,859 INFO main - -->op: RemoveOp: `float result = ((float)(b[...] ` ---> `-` at pos 2 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:11:31,207 INFO main - mod_point ModificPoint=G2TextMeasurer line: 79, el: CtReturnImpl
+2017-01-31 22:11:31,207 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 3 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:11:33,477 INFO main - mod_point ModificPoint=TextUtilities line: 186, el: CtLocalVariableImpl
+2017-01-31 22:11:33,478 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:11:35,820 INFO main - mod_point ModificPoint=TextUtilities line: 187, el: CtLocalVariableImpl
+2017-01-31 22:11:35,821 INFO main - -->op: RemoveOp: `java.text.BreakIterator i[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:11:38,232 INFO main - mod_point ModificPoint=TextUtilities line: 188, el: CtInvocationImpl
+2017-01-31 22:11:38,232 INFO main - -->op: RemoveOp: `iterator.setText(text) ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:11:41,846 INFO main - mod_point ModificPoint=TextUtilities line: 189, el: CtLocalVariableImpl
+2017-01-31 22:11:41,847 INFO main - -->op: RemoveOp: `int current = 0 ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:11:44,189 INFO main - mod_point ModificPoint=TextUtilities line: 190, el: CtLocalVariableImpl
+2017-01-31 22:11:44,190 INFO main - -->op: RemoveOp: `int lines = 0 ` ---> `-` at pos 4 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:11:46,586 INFO main - mod_point ModificPoint=TextUtilities line: 191, el: CtLocalVariableImpl
+2017-01-31 22:11:46,587 INFO main - -->op: RemoveOp: `int length = text.length([...] ` ---> `-` at pos 5 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:11:48,927 INFO main - mod_point ModificPoint=TextUtilities line: 192, el: CtWhileImpl
+2017-01-31 22:11:48,928 INFO main - -->op: RemoveOp: `while ((current < length)[...] ` ---> `-` at pos 6 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:11:52,386 INFO main - mod_point ModificPoint=TextUtilities line: 193, el: CtLocalVariableImpl
+2017-01-31 22:11:52,386 INFO main - -->op: RemoveOp: `int next = org.jfree.char[...] ` ---> `-` at pos 0 of parent `{ 	int next = org.jfree.c[...]`
+2017-01-31 22:11:54,790 INFO main - mod_point ModificPoint=TextUtilities line: 195, el: CtIfImpl
+2017-01-31 22:11:54,790 INFO main - -->op: ReplaceIfBooleanOp: `if (next == (java.text.Br[...] ` ---> `if (true) { 	result.addLi[...]` at pos 1 of parent `{ 	int next = org.jfree.c[...]`
+2017-01-31 22:11:58,474 INFO main - mod_point ModificPoint=TextUtilities line: 195, el: CtIfImpl
+2017-01-31 22:11:58,474 INFO main - -->op: ReplaceIfBooleanOp: `if (next == (java.text.Br[...] ` ---> `if (false) { 	result.addL[...]` at pos 1 of parent `{ 	int next = org.jfree.c[...]`
+2017-01-31 22:12:02,246 INFO main - mod_point ModificPoint=TextUtilities line: 195, el: CtIfImpl
+2017-01-31 22:12:02,247 INFO main - -->op: RemoveOp: `if (next == (java.text.Br[...] ` ---> `-` at pos 1 of parent `{ 	int next = org.jfree.c[...]`
+2017-01-31 22:12:05,982 INFO main - mod_point ModificPoint=TextUtilities line: 196, el: CtInvocationImpl
+2017-01-31 22:12:05,982 INFO main - -->op: RemoveOp: `result.addLine(text.subst[...] ` ---> `-` at pos 0 of parent `{ 	result.addLine(text.su[...]`
+2017-01-31 22:12:09,685 INFO main - mod_point ModificPoint=TextUtilities line: 197, el: CtReturnImpl
+2017-01-31 22:12:09,686 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 1 of parent `{ 	result.addLine(text.su[...]`
+2017-01-31 22:12:13,229 INFO main - mod_point ModificPoint=TextUtilities line: 239, el: CtLocalVariableImpl
+2017-01-31 22:12:13,230 INFO main - -->op: RemoveOp: `int current = start ` ---> `-` at pos 0 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:15,667 INFO main - mod_point ModificPoint=TextUtilities line: 241, el: CtLocalVariableImpl
+2017-01-31 22:12:15,667 INFO main - -->op: RemoveOp: `float x = 0.0F ` ---> `-` at pos 2 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:18,011 INFO main - mod_point ModificPoint=TextUtilities line: 242, el: CtLocalVariableImpl
+2017-01-31 22:12:18,011 INFO main - -->op: RemoveOp: `boolean firstWord = true ` ---> `-` at pos 3 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:20,350 INFO main - mod_point ModificPoint=TextUtilities line: 243, el: CtLocalVariableImpl
+2017-01-31 22:12:20,350 INFO main - -->op: RemoveOp: `int newline = text.indexO[...] ` ---> `-` at pos 4 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:22,775 INFO main - mod_point ModificPoint=TextUtilities line: 244, el: CtIfImpl
+2017-01-31 22:12:22,776 INFO main - -->op: ReplaceIfBooleanOp: `if (newline < 0) { 	newli[...] ` ---> `if (true) { 	newline = ja[...]` at pos 5 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:26,583 INFO main - mod_point ModificPoint=TextUtilities line: 244, el: CtIfImpl
+2017-01-31 22:12:26,583 INFO main - -->op: ReplaceIfBooleanOp: `if (newline < 0) { 	newli[...] ` ---> `if (false) { 	newline = j[...]` at pos 5 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:30,275 INFO main - mod_point ModificPoint=TextUtilities line: 244, el: CtIfImpl
+2017-01-31 22:12:30,275 INFO main - -->op: RemoveOp: `if (newline < 0) { 	newli[...] ` ---> `-` at pos 5 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:33,818 INFO main - mod_point ModificPoint=TextUtilities line: 245, el: CtAssignmentImpl
+2017-01-31 22:12:33,819 INFO main - -->op: RemoveOp: `newline = java.lang.Integ[...] ` ---> `-` at pos 0 of parent `{ 	newline = java.lang.In[...]`
+2017-01-31 22:12:37,995 INFO main - mod_point ModificPoint=TextUtilities line: 247, el: CtWhileImpl
+2017-01-31 22:12:37,996 INFO main - -->op: RemoveOp: `while ((end = iterator.ne[...] ` ---> `-` at pos 6 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:12:41,713 INFO main - mod_point ModificPoint=TextUtilities line: 248, el: CtIfImpl
+2017-01-31 22:12:41,713 INFO main - -->op: ReplaceIfBooleanOp: `if (end > newline) { 	ret[...] ` ---> `if (true) { 	return newli[...]` at pos 0 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:12:45,209 INFO main - mod_point ModificPoint=TextUtilities line: 248, el: CtIfImpl
+2017-01-31 22:12:45,209 INFO main - -->op: ReplaceIfBooleanOp: `if (end > newline) { 	ret[...] ` ---> `if (false) { 	return newl[...]` at pos 0 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:12:49,216 INFO main - mod_point ModificPoint=TextUtilities line: 248, el: CtIfImpl
+2017-01-31 22:12:49,217 INFO main - -->op: RemoveOp: `if (end > newline) { 	ret[...] ` ---> `-` at pos 0 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:12:52,927 INFO main - mod_point ModificPoint=TextUtilities line: 251, el: CtOperatorAssignmentImpl
+2017-01-31 22:12:52,927 INFO main - -->op: RemoveOp: `x += measurer.getStringWi[...] ` ---> `-` at pos 1 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:12:56,486 INFO main - mod_point ModificPoint=TextUtilities line: 252, el: CtIfImpl
+2017-01-31 22:12:56,486 INFO main - -->op: ReplaceIfBooleanOp: `if (x > width) { 	if (fir[...] ` ---> `if (true) { 	if (firstWor[...]` at pos 2 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:13:00,185 INFO main - mod_point ModificPoint=TextUtilities line: 252, el: CtIfImpl
+2017-01-31 22:13:00,186 INFO main - -->op: ReplaceIfBooleanOp: `if (x > width) { 	if (fir[...] ` ---> `if (false) { 	if (firstWo[...]` at pos 2 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:13:03,899 INFO main - mod_point ModificPoint=TextUtilities line: 252, el: CtIfImpl
+2017-01-31 22:13:03,899 INFO main - -->op: RemoveOp: `if (x > width) { 	if (fir[...] ` ---> `-` at pos 2 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:13:07,709 INFO main - mod_point ModificPoint=TextUtilities line: 268, el: CtAssignmentImpl
+2017-01-31 22:13:07,709 INFO main - -->op: RemoveOp: `firstWord = false ` ---> `-` at pos 3 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:13:11,582 INFO main - mod_point ModificPoint=TextUtilities line: 269, el: CtAssignmentImpl
+2017-01-31 22:13:11,583 INFO main - -->op: RemoveOp: `current = end ` ---> `-` at pos 4 of parent `{ 	if (end > newline) { 	[...]`
+2017-01-31 22:13:15,141 INFO main - mod_point ModificPoint=TextUtilities line: 271, el: CtReturnImpl
+2017-01-31 22:13:15,142 INFO main - -->op: RemoveOp: `return java.text.BreakIte[...] ` ---> `-` at pos 7 of parent `{ 	int current = start; 	[...]`
+2017-01-31 22:13:17,482 INFO main - mod_point ModificPoint=Plot line: 963, el: CtIfImpl
+2017-01-31 22:13:17,482 INFO main - -->op: ReplaceIfBooleanOp: `if (orientation == null) [...] ` ---> `if (true) { 	throw new ja[...]` at pos 0 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:21,158 INFO main - mod_point ModificPoint=Plot line: 963, el: CtIfImpl
+2017-01-31 22:13:21,159 INFO main - -->op: ReplaceIfBooleanOp: `if (orientation == null) [...] ` ---> `if (false) { 	throw new j[...]` at pos 0 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:24,812 INFO main - mod_point ModificPoint=Plot line: 963, el: CtIfImpl
+2017-01-31 22:13:24,812 INFO main - -->op: RemoveOp: `if (orientation == null) [...] ` ---> `-` at pos 0 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:28,391 INFO main - mod_point ModificPoint=Plot line: 966, el: CtIfImpl
+2017-01-31 22:13:28,392 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.plot[...] ` ---> `if (true) { 	return ; } ` at pos 1 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:32,228 INFO main - mod_point ModificPoint=Plot line: 966, el: CtIfImpl
+2017-01-31 22:13:32,229 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.plot[...] ` ---> `if (false) { 	return ; } ` at pos 1 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:35,913 INFO main - mod_point ModificPoint=Plot line: 966, el: CtIfImpl
+2017-01-31 22:13:35,914 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.plot[...] ` ---> `-` at pos 1 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:39,849 INFO main - mod_point ModificPoint=Plot line: 969, el: CtLocalVariableImpl
+2017-01-31 22:13:39,849 INFO main - -->op: RemoveOp: `java.awt.Paint p = org.jf[...] ` ---> `-` at pos 2 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:42,249 INFO main - mod_point ModificPoint=Plot line: 970, el: CtIfImpl
+2017-01-31 22:13:42,250 INFO main - -->op: ReplaceIfBooleanOp: `if (p instanceof java.awt[...] ` ---> `if (true) { 	java.awt.Gra[...]` at pos 3 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:45,964 INFO main - mod_point ModificPoint=Plot line: 970, el: CtIfImpl
+2017-01-31 22:13:45,965 INFO main - -->op: ReplaceIfBooleanOp: `if (p instanceof java.awt[...] ` ---> `if (false) { 	java.awt.Gr[...]` at pos 3 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:49,687 INFO main - mod_point ModificPoint=Plot line: 970, el: CtIfImpl
+2017-01-31 22:13:49,687 INFO main - -->op: RemoveOp: `if (p instanceof java.awt[...] ` ---> `-` at pos 3 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:53,490 INFO main - mod_point ModificPoint=Plot line: 985, el: CtLocalVariableImpl
+2017-01-31 22:13:53,490 INFO main - -->op: RemoveOp: `java.awt.Composite origin[...] ` ---> `-` at pos 4 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:55,798 INFO main - mod_point ModificPoint=Plot line: 986, el: CtInvocationImpl
+2017-01-31 22:13:55,799 INFO main - -->op: RemoveOp: `g2.setComposite(java.awt.[...] ` ---> `-` at pos 5 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:13:59,345 INFO main - mod_point ModificPoint=Plot line: 988, el: CtInvocationImpl
+2017-01-31 22:13:59,346 INFO main - -->op: RemoveOp: `g2.setPaint(p) ` ---> `-` at pos 6 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:14:03,821 INFO main - mod_point ModificPoint=Plot line: 989, el: CtInvocationImpl
+2017-01-31 22:14:03,821 INFO main - -->op: RemoveOp: `g2.fill(area) ` ---> `-` at pos 7 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:14:07,429 INFO main - mod_point ModificPoint=Plot line: 990, el: CtInvocationImpl
+2017-01-31 22:14:07,430 INFO main - -->op: RemoveOp: `g2.setComposite(originalC[...] ` ---> `-` at pos 8 of parent `{ 	if (orientation == nul[...]`
+2017-01-31 22:14:10,990 INFO main - mod_point ModificPoint=Plot line: 1005, el: CtIfImpl
+2017-01-31 22:14:10,991 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.plot[...] ` ---> `if (true) { 	java.awt.Com[...]` at pos 0 of parent `{ 	if ((org.jfree.chart.p[...]`
+2017-01-31 22:14:14,733 INFO main - mod_point ModificPoint=Plot line: 1005, el: CtIfImpl
+2017-01-31 22:14:14,734 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.plot[...] ` ---> `if (false) { 	java.awt.Co[...]` at pos 0 of parent `{ 	if ((org.jfree.chart.p[...]`
+2017-01-31 22:14:18,408 INFO main - mod_point ModificPoint=Plot line: 1005, el: CtIfImpl
+2017-01-31 22:14:18,408 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.plot[...] ` ---> `-` at pos 0 of parent `{ 	if ((org.jfree.chart.p[...]`
+2017-01-31 22:14:22,031 INFO main - mod_point ModificPoint=LegendTitle line: 399, el: CtForImpl
+2017-01-31 22:14:22,032 INFO main - -->op: RemoveOp: `for (int i = 0 ; i < (leg[...] ` ---> `-` at pos 0 of parent `{ 	for (int i = 0 ; i < ([...]`
+2017-01-31 22:14:25,756 INFO main - mod_point ModificPoint=LineBorder line: 123, el: CtReturnImpl
+2017-01-31 22:14:25,756 INFO main - -->op: RemoveOp: `return org.jfree.chart.bl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:14:28,137 INFO main - mod_point ModificPoint=LineBorder line: 142, el: CtLocalVariableImpl
+2017-01-31 22:14:28,138 INFO main - -->op: RemoveOp: `double w = area.getWidth([...] ` ---> `-` at pos 0 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:14:30,463 INFO main - mod_point ModificPoint=LineBorder line: 143, el: CtLocalVariableImpl
+2017-01-31 22:14:30,464 INFO main - -->op: RemoveOp: `double h = area.getHeight[...] ` ---> `-` at pos 1 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:14:32,890 INFO main - mod_point ModificPoint=LineBorder line: 145, el: CtIfImpl
+2017-01-31 22:14:32,891 INFO main - -->op: ReplaceIfBooleanOp: `if ((w <= 0.0) || (h <= 0[...] ` ---> `if (true) { 	return ; } ` at pos 2 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:14:36,530 INFO main - mod_point ModificPoint=LineBorder line: 145, el: CtIfImpl
+2017-01-31 22:14:36,530 INFO main - -->op: ReplaceIfBooleanOp: `if ((w <= 0.0) || (h <= 0[...] ` ---> `if (false) { 	return ; } ` at pos 2 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:14:40,100 INFO main - mod_point ModificPoint=LineBorder line: 145, el: CtIfImpl
+2017-01-31 22:14:40,100 INFO main - -->op: RemoveOp: `if ((w <= 0.0) || (h <= 0[...] ` ---> `-` at pos 2 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:14:43,747 INFO main - mod_point ModificPoint=TextFragment line: 206, el: CtInvocationImpl
+2017-01-31 22:14:43,747 INFO main - -->op: RemoveOp: `g2.setFont(org.jfree.char[...] ` ---> `-` at pos 0 of parent `{ 	g2.setFont(org.jfree.c[...]`
+2017-01-31 22:14:47,424 INFO main - mod_point ModificPoint=TextFragment line: 207, el: CtInvocationImpl
+2017-01-31 22:14:47,424 INFO main - -->op: RemoveOp: `g2.setPaint(org.jfree.cha[...] ` ---> `-` at pos 1 of parent `{ 	g2.setFont(org.jfree.c[...]`
+2017-01-31 22:14:50,996 INFO main - mod_point ModificPoint=TextFragment line: 208, el: CtInvocationImpl
+2017-01-31 22:14:50,996 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 2 of parent `{ 	g2.setFont(org.jfree.c[...]`
+2017-01-31 22:14:54,617 INFO main - mod_point ModificPoint=TextFragment line: 221, el: CtLocalVariableImpl
+2017-01-31 22:14:54,617 INFO main - -->op: RemoveOp: `java.awt.FontMetrics fm =[...] ` ---> `-` at pos 0 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:14:56,966 INFO main - mod_point ModificPoint=TextFragment line: 222, el: CtLocalVariableImpl
+2017-01-31 22:14:56,967 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 1 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:14:59,251 INFO main - mod_point ModificPoint=TextFragment line: 223, el: CtLocalVariableImpl
+2017-01-31 22:14:59,252 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 2 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:15:01,524 INFO main - mod_point ModificPoint=TextFragment line: 224, el: CtReturnImpl
+2017-01-31 22:15:01,524 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 3 of parent `{ 	java.awt.FontMetrics f[...]`
+2017-01-31 22:15:03,894 INFO main - mod_point ModificPoint=TextFragment line: 237, el: CtLocalVariableImpl
+2017-01-31 22:15:03,894 INFO main - -->op: RemoveOp: `float result = 0.0F ` ---> `-` at pos 0 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:15:06,180 INFO main - mod_point ModificPoint=TextFragment line: 238, el: CtLocalVariableImpl
+2017-01-31 22:15:06,180 INFO main - -->op: RemoveOp: `java.awt.FontMetrics fm =[...] ` ---> `-` at pos 1 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:15:08,454 INFO main - mod_point ModificPoint=TextFragment line: 239, el: CtLocalVariableImpl
+2017-01-31 22:15:08,454 INFO main - -->op: RemoveOp: `java.awt.font.LineMetrics[...] ` ---> `-` at pos 2 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:15:10,843 INFO main - mod_point ModificPoint=TextFragment line: 240, el: CtIfImpl
+2017-01-31 22:15:10,843 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (true) { 	result = lm.[...]` at pos 3 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:15:14,530 INFO main - mod_point ModificPoint=TextFragment line: 240, el: CtIfImpl
+2017-01-31 22:15:14,530 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (false) { 	result = lm[...]` at pos 3 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:15:18,268 INFO main - mod_point ModificPoint=TextFragment line: 240, el: CtIfImpl
+2017-01-31 22:15:18,269 INFO main - -->op: RemoveOp: `if (((anchor == (org.jfre[...] ` ---> `-` at pos 3 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:15:21,981 INFO main - mod_point ModificPoint=TextFragment line: 242, el: CtAssignmentImpl
+2017-01-31 22:15:21,981 INFO main - -->op: RemoveOp: `result = lm.getAscent() ` ---> `-` at pos 0 of parent `{ 	result = lm.getAscent([...]`
+2017-01-31 22:15:25,798 INFO main - mod_point ModificPoint=TextFragment line: 249, el: CtReturnImpl
+2017-01-31 22:15:25,798 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 4 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:15:28,070 INFO main - mod_point ModificPoint=TextBlock line: 162, el: CtLocalVariableImpl
+2017-01-31 22:15:28,070 INFO main - -->op: RemoveOp: `double width = 0.0 ` ---> `-` at pos 0 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:15:30,340 INFO main - mod_point ModificPoint=TextBlock line: 163, el: CtLocalVariableImpl
+2017-01-31 22:15:30,340 INFO main - -->op: RemoveOp: `double height = 0.0 ` ---> `-` at pos 1 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:15:32,666 INFO main - mod_point ModificPoint=TextBlock line: 164, el: CtLocalVariableImpl
+2017-01-31 22:15:32,666 INFO main - -->op: RemoveOp: `java.util.Iterator iterat[...] ` ---> `-` at pos 2 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:15:35,048 INFO main - mod_point ModificPoint=TextBlock line: 165, el: CtWhileImpl
+2017-01-31 22:15:35,048 INFO main - -->op: RemoveOp: `while (iterator.hasNext()[...] ` ---> `-` at pos 3 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:15:38,812 INFO main - mod_point ModificPoint=TextBlock line: 166, el: CtLocalVariableImpl
+2017-01-31 22:15:38,812 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:15:41,140 INFO main - mod_point ModificPoint=TextBlock line: 167, el: CtLocalVariableImpl
+2017-01-31 22:15:41,140 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:15:43,408 INFO main - mod_point ModificPoint=TextBlock line: 168, el: CtAssignmentImpl
+2017-01-31 22:15:43,409 INFO main - -->op: RemoveOp: `width = java.lang.Math.ma[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:15:47,095 INFO main - mod_point ModificPoint=TextBlock line: 169, el: CtAssignmentImpl
+2017-01-31 22:15:47,095 INFO main - -->op: RemoveOp: `height = height + (dimens[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:15:50,770 INFO main - mod_point ModificPoint=TextBlock line: 171, el: CtReturnImpl
+2017-01-31 22:15:50,770 INFO main - -->op: RemoveOp: `return new org.jfree.char[...] ` ---> `-` at pos 4 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:15:53,038 INFO main - mod_point ModificPoint=TextBlock line: 210, el: CtInvocationImpl
+2017-01-31 22:15:53,038 INFO main - -->op: RemoveOp: `draw(g2, x, y, anchor, 0.[...] ` ---> `-` at pos 0 of parent `{ 	draw(g2, x, y, anchor,[...]`
+2017-01-31 22:15:56,811 INFO main - mod_point ModificPoint=TextBlock line: 230, el: CtLocalVariableImpl
+2017-01-31 22:15:56,812 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:15:59,169 INFO main - mod_point ModificPoint=TextBlock line: 231, el: CtLocalVariableImpl
+2017-01-31 22:15:59,169 INFO main - -->op: RemoveOp: `float[] offsets = calcula[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:16:01,447 INFO main - mod_point ModificPoint=TextBlock line: 232, el: CtLocalVariableImpl
+2017-01-31 22:16:01,447 INFO main - -->op: RemoveOp: `java.util.Iterator iterat[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:16:03,713 INFO main - mod_point ModificPoint=TextBlock line: 233, el: CtLocalVariableImpl
+2017-01-31 22:16:03,713 INFO main - -->op: RemoveOp: `float yCursor = 0.0F ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:16:06,084 INFO main - mod_point ModificPoint=TextBlock line: 234, el: CtWhileImpl
+2017-01-31 22:16:06,085 INFO main - -->op: RemoveOp: `while (iterator.hasNext()[...] ` ---> `-` at pos 4 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:16:09,948 INFO main - mod_point ModificPoint=TextBlock line: 235, el: CtLocalVariableImpl
+2017-01-31 22:16:09,948 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:12,217 INFO main - mod_point ModificPoint=TextBlock line: 236, el: CtLocalVariableImpl
+2017-01-31 22:16:12,218 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:14,594 INFO main - mod_point ModificPoint=TextBlock line: 237, el: CtLocalVariableImpl
+2017-01-31 22:16:14,595 INFO main - -->op: RemoveOp: `float lineOffset = 0.0F ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:16,892 INFO main - mod_point ModificPoint=TextBlock line: 238, el: CtIfImpl
+2017-01-31 22:16:16,893 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.text[...] ` ---> `if (true) { 	lineOffset =[...]` at pos 3 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:20,449 INFO main - mod_point ModificPoint=TextBlock line: 238, el: CtIfImpl
+2017-01-31 22:16:20,450 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.text[...] ` ---> `if (false) { 	lineOffset [...]` at pos 3 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:24,298 INFO main - mod_point ModificPoint=TextBlock line: 238, el: CtIfImpl
+2017-01-31 22:16:24,298 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.text[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:28,009 INFO main - mod_point ModificPoint=TextBlock line: 239, el: CtAssignmentImpl
+2017-01-31 22:16:28,009 INFO main - -->op: RemoveOp: `lineOffset = ((float)(((d[...] ` ---> `-` at pos 0 of parent `{ 	lineOffset = ((float)([...]`
+2017-01-31 22:16:31,543 INFO main - mod_point ModificPoint=TextBlock line: 245, el: CtInvocationImpl
+2017-01-31 22:16:31,543 INFO main - -->op: RemoveOp: `line.draw(g2, ((anchorX +[...] ` ---> `-` at pos 4 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:35,207 INFO main - mod_point ModificPoint=TextBlock line: 248, el: CtAssignmentImpl
+2017-01-31 22:16:35,207 INFO main - -->op: RemoveOp: `yCursor = yCursor + ((flo[...] ` ---> `-` at pos 5 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:16:39,213 INFO main - mod_point ModificPoint=TextBlock line: 266, el: CtLocalVariableImpl
+2017-01-31 22:16:39,213 INFO main - -->op: RemoveOp: `float[] result = new floa[...] ` ---> `-` at pos 0 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:16:41,484 INFO main - mod_point ModificPoint=TextBlock line: 267, el: CtLocalVariableImpl
+2017-01-31 22:16:41,484 INFO main - -->op: RemoveOp: `float xAdj = 0.0F ` ---> `-` at pos 1 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:16:43,752 INFO main - mod_point ModificPoint=TextBlock line: 268, el: CtLocalVariableImpl
+2017-01-31 22:16:43,752 INFO main - -->op: RemoveOp: `float yAdj = 0.0F ` ---> `-` at pos 2 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:16:46,078 INFO main - mod_point ModificPoint=TextBlock line: 270, el: CtIfImpl
+2017-01-31 22:16:46,079 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (true) { 	xAdj = ((flo[...]` at pos 3 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:16:49,825 INFO main - mod_point ModificPoint=TextBlock line: 270, el: CtIfImpl
+2017-01-31 22:16:49,825 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (false) { 	xAdj = ((fl[...]` at pos 3 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:16:53,653 INFO main - mod_point ModificPoint=TextBlock line: 270, el: CtIfImpl
+2017-01-31 22:16:53,653 INFO main - -->op: RemoveOp: `if (((anchor == (org.jfre[...] ` ---> `-` at pos 3 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:16:57,381 INFO main - mod_point ModificPoint=TextBlock line: 285, el: CtIfImpl
+2017-01-31 22:16:57,382 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (true) { 	yAdj = 0.0F;[...]` at pos 4 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:17:01,079 INFO main - mod_point ModificPoint=TextBlock line: 285, el: CtIfImpl
+2017-01-31 22:17:01,080 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (false) { 	yAdj = 0.0F[...]` at pos 4 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:17:04,756 INFO main - mod_point ModificPoint=TextBlock line: 285, el: CtIfImpl
+2017-01-31 22:17:04,757 INFO main - -->op: RemoveOp: `if (((anchor == (org.jfre[...] ` ---> `-` at pos 4 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:17:08,548 INFO main - mod_point ModificPoint=TextBlock line: 289, el: CtAssignmentImpl
+2017-01-31 22:17:08,549 INFO main - -->op: RemoveOp: `yAdj = 0.0F ` ---> `-` at pos 0 of parent `{ 	yAdj = 0.0F; }`
+2017-01-31 22:17:12,733 INFO main - mod_point ModificPoint=TextBlock line: 306, el: CtAssignmentImpl
+2017-01-31 22:17:12,734 INFO main - -->op: RemoveOp: `result[0] = xAdj ` ---> `-` at pos 5 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:17:16,356 INFO main - mod_point ModificPoint=TextBlock line: 307, el: CtAssignmentImpl
+2017-01-31 22:17:16,356 INFO main - -->op: RemoveOp: `result[1] = yAdj ` ---> `-` at pos 6 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:17:20,043 INFO main - mod_point ModificPoint=TextBlock line: 308, el: CtReturnImpl
+2017-01-31 22:17:20,044 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 7 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:17:22,307 INFO main - mod_point ModificPoint=TextLine line: 156, el: CtLocalVariableImpl
+2017-01-31 22:17:22,308 INFO main - -->op: RemoveOp: `float x = anchorX ` ---> `-` at pos 0 of parent `{ 	float x = anchorX; 	fl[...]`
+2017-01-31 22:17:24,568 INFO main - mod_point ModificPoint=TextLine line: 157, el: CtLocalVariableImpl
+2017-01-31 22:17:24,569 INFO main - -->op: RemoveOp: `float yOffset = calculate[...] ` ---> `-` at pos 1 of parent `{ 	float x = anchorX; 	fl[...]`
+2017-01-31 22:17:26,939 INFO main - mod_point ModificPoint=TextLine line: 158, el: CtLocalVariableImpl
+2017-01-31 22:17:26,939 INFO main - -->op: RemoveOp: `java.util.Iterator iterat[...] ` ---> `-` at pos 2 of parent `{ 	float x = anchorX; 	fl[...]`
+2017-01-31 22:17:29,212 INFO main - mod_point ModificPoint=TextLine line: 159, el: CtWhileImpl
+2017-01-31 22:17:29,213 INFO main - -->op: RemoveOp: `while (iterator.hasNext()[...] ` ---> `-` at pos 3 of parent `{ 	float x = anchorX; 	fl[...]`
+2017-01-31 22:17:32,831 INFO main - mod_point ModificPoint=TextLine line: 160, el: CtLocalVariableImpl
+2017-01-31 22:17:32,831 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:17:35,093 INFO main - mod_point ModificPoint=TextLine line: 161, el: CtLocalVariableImpl
+2017-01-31 22:17:35,093 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:17:37,428 INFO main - mod_point ModificPoint=TextLine line: 162, el: CtInvocationImpl
+2017-01-31 22:17:37,428 INFO main - -->op: RemoveOp: `fragment.draw(g2, x, (anc[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:17:41,124 INFO main - mod_point ModificPoint=TextLine line: 164, el: CtAssignmentImpl
+2017-01-31 22:17:41,125 INFO main - -->op: RemoveOp: `x = x + ((float)(d.getWid[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:17:44,832 INFO main - mod_point ModificPoint=TextLine line: 177, el: CtLocalVariableImpl
+2017-01-31 22:17:44,832 INFO main - -->op: RemoveOp: `double width = 0.0 ` ---> `-` at pos 0 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:17:47,165 INFO main - mod_point ModificPoint=TextLine line: 178, el: CtLocalVariableImpl
+2017-01-31 22:17:47,166 INFO main - -->op: RemoveOp: `double height = 0.0 ` ---> `-` at pos 1 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:17:49,438 INFO main - mod_point ModificPoint=TextLine line: 179, el: CtLocalVariableImpl
+2017-01-31 22:17:49,438 INFO main - -->op: RemoveOp: `java.util.Iterator iterat[...] ` ---> `-` at pos 2 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:17:51,695 INFO main - mod_point ModificPoint=TextLine line: 180, el: CtWhileImpl
+2017-01-31 22:17:51,695 INFO main - -->op: RemoveOp: `while (iterator.hasNext()[...] ` ---> `-` at pos 3 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:17:55,355 INFO main - mod_point ModificPoint=TextLine line: 181, el: CtLocalVariableImpl
+2017-01-31 22:17:55,355 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:17:57,622 INFO main - mod_point ModificPoint=TextLine line: 182, el: CtLocalVariableImpl
+2017-01-31 22:17:57,623 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:17:59,893 INFO main - mod_point ModificPoint=TextLine line: 183, el: CtAssignmentImpl
+2017-01-31 22:17:59,893 INFO main - -->op: RemoveOp: `width = width + (dimensio[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:18:03,554 INFO main - mod_point ModificPoint=TextLine line: 184, el: CtAssignmentImpl
+2017-01-31 22:18:03,554 INFO main - -->op: RemoveOp: `height = java.lang.Math.m[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:18:07,273 INFO main - mod_point ModificPoint=TextLine line: 186, el: CtReturnImpl
+2017-01-31 22:18:07,274 INFO main - -->op: RemoveOp: `return new org.jfree.char[...] ` ---> `-` at pos 4 of parent `{ 	double width = 0.0; 	d[...]`
+2017-01-31 22:18:09,542 INFO main - mod_point ModificPoint=TextLine line: 227, el: CtLocalVariableImpl
+2017-01-31 22:18:09,543 INFO main - -->op: RemoveOp: `float result = 0.0F ` ---> `-` at pos 0 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:18:11,890 INFO main - mod_point ModificPoint=TextLine line: 228, el: CtLocalVariableImpl
+2017-01-31 22:18:11,890 INFO main - -->op: RemoveOp: `java.util.Iterator iterat[...] ` ---> `-` at pos 1 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:18:14,151 INFO main - mod_point ModificPoint=TextLine line: 229, el: CtWhileImpl
+2017-01-31 22:18:14,151 INFO main - -->op: RemoveOp: `while (iterator.hasNext()[...] ` ---> `-` at pos 2 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:18:17,882 INFO main - mod_point ModificPoint=TextLine line: 230, el: CtLocalVariableImpl
+2017-01-31 22:18:17,882 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:18:20,259 INFO main - mod_point ModificPoint=TextLine line: 231, el: CtAssignmentImpl
+2017-01-31 22:18:20,259 INFO main - -->op: RemoveOp: `result = java.lang.Math.m[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.text.T[...]`
+2017-01-31 22:18:24,359 INFO main - mod_point ModificPoint=TextLine line: 234, el: CtReturnImpl
+2017-01-31 22:18:24,359 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 3 of parent `{ 	float result = 0.0F; 	[...]`
+2017-01-31 22:18:26,628 INFO main - mod_point ModificPoint=TextUtilities line: 518, el: CtIfImpl
+2017-01-31 22:18:26,628 INFO main - -->op: ReplaceIfBooleanOp: `if ((text == null) || (te[...] ` ---> `if (true) { 	return ; } ` at pos 0 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:18:30,386 INFO main - mod_point ModificPoint=TextUtilities line: 518, el: CtIfImpl
+2017-01-31 22:18:30,386 INFO main - -->op: ReplaceIfBooleanOp: `if ((text == null) || (te[...] ` ---> `if (false) { 	return ; } ` at pos 0 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:18:34,027 INFO main - mod_point ModificPoint=TextUtilities line: 518, el: CtIfImpl
+2017-01-31 22:18:34,027 INFO main - -->op: RemoveOp: `if ((text == null) || (te[...] ` ---> `-` at pos 0 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:18:37,658 INFO main - mod_point ModificPoint=TextUtilities line: 521, el: CtLocalVariableImpl
+2017-01-31 22:18:37,658 INFO main - -->op: RemoveOp: `float[] textAdj = org.jfr[...] ` ---> `-` at pos 1 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:18:40,186 INFO main - mod_point ModificPoint=TextUtilities line: 522, el: CtInvocationImpl
+2017-01-31 22:18:40,187 INFO main - -->op: RemoveOp: `org.jfree.chart.text.Text[...] ` ---> `-` at pos 2 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:18:43,763 INFO main - mod_point ModificPoint=TextUtilities line: 655, el: CtIfImpl
+2017-01-31 22:18:43,763 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (true) { 	yAdj = 0.0F;[...]` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:18:47,393 INFO main - mod_point ModificPoint=TextUtilities line: 655, el: CtIfImpl
+2017-01-31 22:18:47,393 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (false) { 	yAdj = 0.0F[...]` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:18:51,006 INFO main - mod_point ModificPoint=TextUtilities line: 655, el: CtIfImpl
+2017-01-31 22:18:51,006 INFO main - -->op: RemoveOp: `if (((anchor == (org.jfre[...] ` ---> `-` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:18:54,705 INFO main - mod_point ModificPoint=TextUtilities line: 659, el: CtAssignmentImpl
+2017-01-31 22:18:54,705 INFO main - -->op: RemoveOp: `yAdj = 0.0F ` ---> `-` at pos 0 of parent `{ 	yAdj = 0.0F; }`
+2017-01-31 22:18:58,351 INFO main - mod_point ModificPoint=AbstractBlock line: 239, el: CtReturnImpl
+2017-01-31 22:18:58,352 INFO main - -->op: RemoveOp: `return org.jfree.chart.bl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:19:00,628 INFO main - mod_point ModificPoint=BlockContainer line: 131, el: CtReturnImpl
+2017-01-31 22:19:00,628 INFO main - -->op: RemoveOp: `return org.jfree.chart.bl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:19:02,969 INFO main - mod_point ModificPoint=BlockContainer line: 207, el: CtLocalVariableImpl
+2017-01-31 22:19:02,969 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Ent[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:05,240 INFO main - mod_point ModificPoint=BlockContainer line: 208, el: CtLocalVariableImpl
+2017-01-31 22:19:05,241 INFO main - -->op: RemoveOp: `org.jfree.chart.entity.St[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:07,510 INFO main - mod_point ModificPoint=BlockContainer line: 209, el: CtIfImpl
+2017-01-31 22:19:07,511 INFO main - -->op: ReplaceIfBooleanOp: `if (params instanceof org[...] ` ---> `if (true) { 	ebp = ((org.[...]` at pos 2 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:11,197 INFO main - mod_point ModificPoint=BlockContainer line: 209, el: CtIfImpl
+2017-01-31 22:19:11,198 INFO main - -->op: ReplaceIfBooleanOp: `if (params instanceof org[...] ` ---> `if (false) { 	ebp = ((org[...]` at pos 2 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:14,894 INFO main - mod_point ModificPoint=BlockContainer line: 209, el: CtIfImpl
+2017-01-31 22:19:14,895 INFO main - -->op: RemoveOp: `if (params instanceof org[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:18,620 INFO main - mod_point ModificPoint=BlockContainer line: 210, el: CtAssignmentImpl
+2017-01-31 22:19:18,621 INFO main - -->op: RemoveOp: `ebp = ((org.jfree.chart.b[...] ` ---> `-` at pos 0 of parent `{ 	ebp = ((org.jfree.char[...]`
+2017-01-31 22:19:22,381 INFO main - mod_point ModificPoint=BlockContainer line: 211, el: CtIfImpl
+2017-01-31 22:19:22,381 INFO main - -->op: ReplaceIfBooleanOp: `if (ebp.getGenerateEntiti[...] ` ---> `if (true) { 	sec = new or[...]` at pos 1 of parent `{ 	ebp = ((org.jfree.char[...]`
+2017-01-31 22:19:25,986 INFO main - mod_point ModificPoint=BlockContainer line: 211, el: CtIfImpl
+2017-01-31 22:19:25,986 INFO main - -->op: ReplaceIfBooleanOp: `if (ebp.getGenerateEntiti[...] ` ---> `if (false) { 	sec = new o[...]` at pos 1 of parent `{ 	ebp = ((org.jfree.char[...]`
+2017-01-31 22:19:29,658 INFO main - mod_point ModificPoint=BlockContainer line: 211, el: CtIfImpl
+2017-01-31 22:19:29,658 INFO main - -->op: RemoveOp: `if (ebp.getGenerateEntiti[...] ` ---> `-` at pos 1 of parent `{ 	ebp = ((org.jfree.char[...]`
+2017-01-31 22:19:33,404 INFO main - mod_point ModificPoint=BlockContainer line: 215, el: CtLocalVariableImpl
+2017-01-31 22:19:33,404 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:35,681 INFO main - mod_point ModificPoint=BlockContainer line: 216, el: CtAssignmentImpl
+2017-01-31 22:19:35,682 INFO main - -->op: RemoveOp: `contentArea = trimMargin([...] ` ---> `-` at pos 4 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:39,314 INFO main - mod_point ModificPoint=BlockContainer line: 217, el: CtInvocationImpl
+2017-01-31 22:19:39,315 INFO main - -->op: RemoveOp: `drawBorder(g2, contentAre[...] ` ---> `-` at pos 5 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:43,176 INFO main - mod_point ModificPoint=BlockContainer line: 218, el: CtAssignmentImpl
+2017-01-31 22:19:43,176 INFO main - -->op: RemoveOp: `contentArea = trimBorder([...] ` ---> `-` at pos 6 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:46,963 INFO main - mod_point ModificPoint=BlockContainer line: 219, el: CtAssignmentImpl
+2017-01-31 22:19:46,963 INFO main - -->op: RemoveOp: `contentArea = trimPadding[...] ` ---> `-` at pos 7 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:50,697 INFO main - mod_point ModificPoint=BlockContainer line: 220, el: CtLocalVariableImpl
+2017-01-31 22:19:50,698 INFO main - -->op: RemoveOp: `java.util.Iterator iterat[...] ` ---> `-` at pos 8 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:53,062 INFO main - mod_point ModificPoint=BlockContainer line: 221, el: CtWhileImpl
+2017-01-31 22:19:53,063 INFO main - -->op: RemoveOp: `while (iterator.hasNext()[...] ` ---> `-` at pos 9 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:56,732 INFO main - mod_point ModificPoint=BlockContainer line: 236, el: CtLocalVariableImpl
+2017-01-31 22:19:56,733 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Blo[...] ` ---> `-` at pos 10 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:19:59,008 INFO main - mod_point ModificPoint=BlockContainer line: 237, el: CtIfImpl
+2017-01-31 22:19:59,009 INFO main - -->op: ReplaceIfBooleanOp: `if (sec != null) { 	resul[...] ` ---> `if (true) { 	result = new[...]` at pos 11 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:20:02,799 INFO main - mod_point ModificPoint=BlockContainer line: 237, el: CtIfImpl
+2017-01-31 22:20:02,800 INFO main - -->op: ReplaceIfBooleanOp: `if (sec != null) { 	resul[...] ` ---> `if (false) { 	result = ne[...]` at pos 11 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:20:06,435 INFO main - mod_point ModificPoint=BlockContainer line: 237, el: CtIfImpl
+2017-01-31 22:20:06,435 INFO main - -->op: RemoveOp: `if (sec != null) { 	resul[...] ` ---> `-` at pos 11 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:20:10,021 INFO main - mod_point ModificPoint=BlockContainer line: 241, el: CtReturnImpl
+2017-01-31 22:20:10,022 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 12 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:20:12,288 INFO main - mod_point ModificPoint=JFreeChart line: 1204, el: CtLocalVariableImpl
+2017-01-31 22:20:12,289 INFO main - -->op: RemoveOp: `org.jfree.chart.title.Tit[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:20:14,636 INFO main - mod_point ModificPoint=JFreeChart line: 1205, el: CtLocalVariableImpl
+2017-01-31 22:20:14,636 INFO main - -->op: RemoveOp: `org.jfree.chart.entity.En[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:20:16,915 INFO main - mod_point ModificPoint=JFreeChart line: 1207, el: CtIfImpl
+2017-01-31 22:20:16,916 INFO main - -->op: ReplaceIfBooleanOp: `if (e != null) { 	entitie[...] ` ---> `if (true) { 	entities.add[...]` at pos 2 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:20:20,576 INFO main - mod_point ModificPoint=JFreeChart line: 1207, el: CtIfImpl
+2017-01-31 22:20:20,577 INFO main - -->op: ReplaceIfBooleanOp: `if (e != null) { 	entitie[...] ` ---> `if (false) { 	entities.ad[...]` at pos 2 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:20:24,197 INFO main - mod_point ModificPoint=JFreeChart line: 1207, el: CtIfImpl
+2017-01-31 22:20:24,197 INFO main - -->op: RemoveOp: `if (e != null) { 	entitie[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:20:28,024 INFO main - mod_point ModificPoint=JFreeChart line: 1254, el: CtIfImpl
+2017-01-31 22:20:28,025 INFO main - -->op: ReplaceIfBooleanOp: `if (vAlign == (org.jfree.[...] ` ---> `if (true) { 	y = (frame.g[...]` at pos 0 of parent `{ 	if (vAlign == (org.jfr[...]`
+2017-01-31 22:20:31,598 INFO main - mod_point ModificPoint=JFreeChart line: 1254, el: CtIfImpl
+2017-01-31 22:20:31,598 INFO main - -->op: ReplaceIfBooleanOp: `if (vAlign == (org.jfree.[...] ` ---> `if (false) { 	y = (frame.[...]` at pos 0 of parent `{ 	if (vAlign == (org.jfr[...]`
+2017-01-31 22:20:35,572 INFO main - mod_point ModificPoint=JFreeChart line: 1254, el: CtIfImpl
+2017-01-31 22:20:35,572 INFO main - -->op: RemoveOp: `if (vAlign == (org.jfree.[...] ` ---> `-` at pos 0 of parent `{ 	if (vAlign == (org.jfr[...]`
+2017-01-31 22:20:39,147 INFO main - mod_point ModificPoint=JFreeChart line: 1257, el: CtIfImpl
+2017-01-31 22:20:39,147 INFO main - -->op: ReplaceIfBooleanOp: `if (vAlign == (org.jfree.[...] ` ---> `if (true) { 	y = (frame.g[...]` at pos 0 of parent `{ 	if (vAlign == (org.jfr[...]`
+2017-01-31 22:20:42,825 INFO main - mod_point ModificPoint=JFreeChart line: 1257, el: CtIfImpl
+2017-01-31 22:20:42,826 INFO main - -->op: ReplaceIfBooleanOp: `if (vAlign == (org.jfree.[...] ` ---> `if (false) { 	y = (frame.[...]` at pos 0 of parent `{ 	if (vAlign == (org.jfr[...]`
+2017-01-31 22:20:46,558 INFO main - mod_point ModificPoint=JFreeChart line: 1257, el: CtIfImpl
+2017-01-31 22:20:46,559 INFO main - -->op: RemoveOp: `if (vAlign == (org.jfree.[...] ` ---> `-` at pos 0 of parent `{ 	if (vAlign == (org.jfr[...]`
+2017-01-31 22:20:50,298 INFO main - mod_point ModificPoint=JFreeChart line: 1258, el: CtAssignmentImpl
+2017-01-31 22:20:50,298 INFO main - -->op: RemoveOp: `y = (frame.getMaxY()) - ([...] ` ---> `-` at pos 0 of parent `{ 	y = (frame.getMaxY()) [...]`
+2017-01-31 22:20:54,048 INFO main - mod_point ModificPoint=JFreeChart line: 1313, el: CtIfImpl
+2017-01-31 22:20:54,049 INFO main - -->op: ReplaceIfBooleanOp: `if (position == (org.jfre[...] ` ---> `if (true) { 	org.jfree.ch[...]` at pos 0 of parent `{ 	if (position == (org.j[...]`
+2017-01-31 22:20:57,794 INFO main - mod_point ModificPoint=JFreeChart line: 1313, el: CtIfImpl
+2017-01-31 22:20:57,795 INFO main - -->op: ReplaceIfBooleanOp: `if (position == (org.jfre[...] ` ---> `if (false) { 	org.jfree.c[...]` at pos 0 of parent `{ 	if (position == (org.j[...]`
+2017-01-31 22:21:01,424 INFO main - mod_point ModificPoint=JFreeChart line: 1313, el: CtIfImpl
+2017-01-31 22:21:01,425 INFO main - -->op: RemoveOp: `if (position == (org.jfre[...] ` ---> `-` at pos 0 of parent `{ 	if (position == (org.j[...]`
+2017-01-31 22:21:05,118 INFO main - mod_point ModificPoint=JFreeChart line: 1314, el: CtLocalVariableImpl
+2017-01-31 22:21:05,119 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:21:07,495 INFO main - mod_point ModificPoint=JFreeChart line: 1315, el: CtAssignmentImpl
+2017-01-31 22:21:07,496 INFO main - -->op: RemoveOp: `titleArea = createAligned[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:21:11,090 INFO main - mod_point ModificPoint=JFreeChart line: 1317, el: CtAssignmentImpl
+2017-01-31 22:21:11,090 INFO main - -->op: RemoveOp: `retValue = t.draw(g2, tit[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:21:14,695 INFO main - mod_point ModificPoint=JFreeChart line: 1318, el: CtInvocationImpl
+2017-01-31 22:21:14,696 INFO main - -->op: RemoveOp: `area.setRect(area.getX(),[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:21:18,393 INFO main - mod_point ModificPoint=LegendTitle line: 388, el: CtInvocationImpl
+2017-01-31 22:21:18,394 INFO main - -->op: RemoveOp: `org.jfree.chart.title.Leg[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:21:22,057 INFO main - mod_point ModificPoint=LegendTitle line: 389, el: CtLocalVariableImpl
+2017-01-31 22:21:22,057 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Rect[...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:21:24,565 INFO main - mod_point ModificPoint=LegendTitle line: 390, el: CtIfImpl
+2017-01-31 22:21:24,566 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.util.[...] ` ---> `if (true) { 	org.jfree.ch[...]` at pos 2 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:21:28,479 INFO main - mod_point ModificPoint=LegendTitle line: 390, el: CtIfImpl
+2017-01-31 22:21:28,479 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.util.[...] ` ---> `if (false) { 	org.jfree.c[...]` at pos 2 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:21:32,193 INFO main - mod_point ModificPoint=LegendTitle line: 390, el: CtIfImpl
+2017-01-31 22:21:32,193 INFO main - -->op: RemoveOp: `if (org.jfree.chart.util.[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:21:35,845 INFO main - mod_point ModificPoint=LegendTitle line: 391, el: CtInvocationImpl
+2017-01-31 22:21:35,845 INFO main - -->op: RemoveOp: `org.jfree.chart.title.Leg[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:21:39,458 INFO main - mod_point ModificPoint=LegendTitle line: 396, el: CtForImpl
+2017-01-31 22:21:39,459 INFO main - -->op: RemoveOp: `for (int s = 0 ; s < (org[...] ` ---> `-` at pos 3 of parent `{ 	org.jfree.chart.title.[...]`
+2017-01-31 22:21:43,121 INFO main - mod_point ModificPoint=LegendTitle line: 397, el: CtLocalVariableImpl
+2017-01-31 22:21:43,122 INFO main - -->op: RemoveOp: `org.jfree.chart.LegendIte[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:21:45,532 INFO main - mod_point ModificPoint=LegendTitle line: 398, el: CtIfImpl
+2017-01-31 22:21:45,532 INFO main - -->op: ReplaceIfBooleanOp: `if (legendItems != null) [...] ` ---> `if (true) { 	for (int i =[...]` at pos 1 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:21:49,225 INFO main - mod_point ModificPoint=LegendTitle line: 398, el: CtIfImpl
+2017-01-31 22:21:49,225 INFO main - -->op: ReplaceIfBooleanOp: `if (legendItems != null) [...] ` ---> `if (false) { 	for (int i [...]` at pos 1 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:21:52,994 INFO main - mod_point ModificPoint=LegendTitle line: 398, el: CtIfImpl
+2017-01-31 22:21:52,994 INFO main - -->op: RemoveOp: `if (legendItems != null) [...] ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.Legend[...]`
+2017-01-31 22:21:56,525 INFO main - mod_point ModificPoint=LegendTitle line: 469, el: CtLocalVariableImpl
+2017-01-31 22:21:56,525 INFO main - -->op: RemoveOp: `org.jfree.chart.util.Size[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:21:58,838 INFO main - mod_point ModificPoint=LegendTitle line: 470, el: CtInvocationImpl
+2017-01-31 22:21:58,838 INFO main - -->op: RemoveOp: `fetchLegendItems() ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:22:02,538 INFO main - mod_point ModificPoint=LegendTitle line: 471, el: CtIfImpl
+2017-01-31 22:22:02,538 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.title[...] ` ---> `if (true) { 	return resul[...]` at pos 2 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:22:06,179 INFO main - mod_point ModificPoint=LegendTitle line: 471, el: CtIfImpl
+2017-01-31 22:22:06,180 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.title[...] ` ---> `if (false) { 	return resu[...]` at pos 2 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:22:09,813 INFO main - mod_point ModificPoint=LegendTitle line: 471, el: CtIfImpl
+2017-01-31 22:22:09,814 INFO main - -->op: RemoveOp: `if (org.jfree.chart.title[...] ` ---> `-` at pos 2 of parent `{ 	org.jfree.chart.util.S[...]`
+2017-01-31 22:22:13,585 INFO main - mod_point ModificPoint=LegendTitle line: 507, el: CtLocalVariableImpl
+2017-01-31 22:22:13,585 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 0 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:15,905 INFO main - mod_point ModificPoint=LegendTitle line: 508, el: CtAssignmentImpl
+2017-01-31 22:22:15,906 INFO main - -->op: RemoveOp: `target = trimMargin(targe[...] ` ---> `-` at pos 1 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:19,591 INFO main - mod_point ModificPoint=LegendTitle line: 509, el: CtIfImpl
+2017-01-31 22:22:19,591 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.titl[...] ` ---> `if (true) { 	g2.setPaint([...]` at pos 2 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:23,277 INFO main - mod_point ModificPoint=LegendTitle line: 509, el: CtIfImpl
+2017-01-31 22:22:23,277 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.titl[...] ` ---> `if (false) { 	g2.setPaint[...]` at pos 2 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:26,981 INFO main - mod_point ModificPoint=LegendTitle line: 509, el: CtIfImpl
+2017-01-31 22:22:26,981 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.titl[...] ` ---> `-` at pos 2 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:30,554 INFO main - mod_point ModificPoint=LegendTitle line: 510, el: CtInvocationImpl
+2017-01-31 22:22:30,554 INFO main - -->op: RemoveOp: `g2.setPaint(org.jfree.cha[...] ` ---> `-` at pos 0 of parent `{ 	g2.setPaint(org.jfree.[...]`
+2017-01-31 22:22:34,540 INFO main - mod_point ModificPoint=LegendTitle line: 511, el: CtInvocationImpl
+2017-01-31 22:22:34,541 INFO main - -->op: RemoveOp: `g2.fill(target) ` ---> `-` at pos 1 of parent `{ 	g2.setPaint(org.jfree.[...]`
+2017-01-31 22:22:38,164 INFO main - mod_point ModificPoint=LegendTitle line: 513, el: CtLocalVariableImpl
+2017-01-31 22:22:38,164 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Blo[...] ` ---> `-` at pos 3 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:40,471 INFO main - mod_point ModificPoint=LegendTitle line: 514, el: CtInvocationImpl
+2017-01-31 22:22:40,471 INFO main - -->op: RemoveOp: `border.draw(g2, target) ` ---> `-` at pos 4 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:44,260 INFO main - mod_point ModificPoint=LegendTitle line: 515, el: CtInvocationImpl
+2017-01-31 22:22:44,260 INFO main - -->op: RemoveOp: `border.getInsets().trim(t[...] ` ---> `-` at pos 5 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:47,905 INFO main - mod_point ModificPoint=LegendTitle line: 516, el: CtLocalVariableImpl
+2017-01-31 22:22:47,905 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Blo[...] ` ---> `-` at pos 6 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:50,219 INFO main - mod_point ModificPoint=LegendTitle line: 517, el: CtIfImpl
+2017-01-31 22:22:50,220 INFO main - -->op: ReplaceIfBooleanOp: `if (container == null) { [...] ` ---> `if (true) { 	container = [...]` at pos 7 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:53,766 INFO main - mod_point ModificPoint=LegendTitle line: 517, el: CtIfImpl
+2017-01-31 22:22:53,767 INFO main - -->op: ReplaceIfBooleanOp: `if (container == null) { [...] ` ---> `if (false) { 	container =[...]` at pos 7 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:22:57,514 INFO main - mod_point ModificPoint=LegendTitle line: 517, el: CtIfImpl
+2017-01-31 22:22:57,515 INFO main - -->op: RemoveOp: `if (container == null) { [...] ` ---> `-` at pos 7 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:23:01,100 INFO main - mod_point ModificPoint=LegendTitle line: 518, el: CtAssignmentImpl
+2017-01-31 22:23:01,100 INFO main - -->op: RemoveOp: `container = org.jfree.cha[...] ` ---> `-` at pos 0 of parent `{ 	container = org.jfree.[...]`
+2017-01-31 22:23:04,669 INFO main - mod_point ModificPoint=LegendTitle line: 520, el: CtAssignmentImpl
+2017-01-31 22:23:04,670 INFO main - -->op: RemoveOp: `target = trimPadding(targ[...] ` ---> `-` at pos 8 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:23:08,382 INFO main - mod_point ModificPoint=LegendTitle line: 521, el: CtReturnImpl
+2017-01-31 22:23:08,383 INFO main - -->op: RemoveOp: `return container.draw(g2,[...] ` ---> `-` at pos 9 of parent `{ 	java.awt.geom.Rectangl[...]`
+2017-01-31 22:23:10,683 INFO main - mod_point ModificPoint=RectangleConstraint line: 179, el: CtReturnImpl
+2017-01-31 22:23:10,683 INFO main - -->op: RemoveOp: `return org.jfree.chart.bl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:23:12,960 INFO main - mod_point ModificPoint=RectangleConstraint line: 206, el: CtReturnImpl
+2017-01-31 22:23:12,961 INFO main - -->op: RemoveOp: `return org.jfree.chart.bl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:23:15,299 INFO main - mod_point ModificPoint=Title line: 206, el: CtReturnImpl
+2017-01-31 22:23:15,299 INFO main - -->op: RemoveOp: `return org.jfree.chart.ti[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:23:17,591 INFO main - mod_point ModificPoint=Title line: 231, el: CtReturnImpl
+2017-01-31 22:23:17,591 INFO main - -->op: RemoveOp: `return org.jfree.chart.ti[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:23:19,881 INFO main - mod_point ModificPoint=LegendItemCollection line: 104, el: CtReturnImpl
+2017-01-31 22:23:19,881 INFO main - -->op: RemoveOp: `return org.jfree.chart.Le[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:23:22,264 INFO main - mod_point ModificPoint=Plot line: 491, el: CtReturnImpl
+2017-01-31 22:23:22,264 INFO main - -->op: RemoveOp: `return org.jfree.chart.pl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:23:24,576 INFO main - mod_point ModificPoint=BlockBorder line: 166, el: CtLocalVariableImpl
+2017-01-31 22:23:24,577 INFO main - -->op: RemoveOp: `double t = org.jfree.char[...] ` ---> `-` at pos 0 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:26,913 INFO main - mod_point ModificPoint=BlockBorder line: 167, el: CtLocalVariableImpl
+2017-01-31 22:23:26,914 INFO main - -->op: RemoveOp: `double b = org.jfree.char[...] ` ---> `-` at pos 1 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:29,322 INFO main - mod_point ModificPoint=BlockBorder line: 168, el: CtLocalVariableImpl
+2017-01-31 22:23:29,323 INFO main - -->op: RemoveOp: `double l = org.jfree.char[...] ` ---> `-` at pos 2 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:31,640 INFO main - mod_point ModificPoint=BlockBorder line: 169, el: CtLocalVariableImpl
+2017-01-31 22:23:31,641 INFO main - -->op: RemoveOp: `double r = org.jfree.char[...] ` ---> `-` at pos 3 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:33,967 INFO main - mod_point ModificPoint=BlockBorder line: 170, el: CtLocalVariableImpl
+2017-01-31 22:23:33,968 INFO main - -->op: RemoveOp: `double x = area.getX() ` ---> `-` at pos 4 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:36,375 INFO main - mod_point ModificPoint=BlockBorder line: 171, el: CtLocalVariableImpl
+2017-01-31 22:23:36,375 INFO main - -->op: RemoveOp: `double y = area.getY() ` ---> `-` at pos 5 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:38,690 INFO main - mod_point ModificPoint=BlockBorder line: 172, el: CtLocalVariableImpl
+2017-01-31 22:23:38,691 INFO main - -->op: RemoveOp: `double w = area.getWidth([...] ` ---> `-` at pos 6 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:41,003 INFO main - mod_point ModificPoint=BlockBorder line: 173, el: CtLocalVariableImpl
+2017-01-31 22:23:41,004 INFO main - -->op: RemoveOp: `double h = area.getHeight[...] ` ---> `-` at pos 7 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:43,428 INFO main - mod_point ModificPoint=BlockBorder line: 174, el: CtInvocationImpl
+2017-01-31 22:23:43,429 INFO main - -->op: RemoveOp: `g2.setPaint(org.jfree.cha[...] ` ---> `-` at pos 8 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:47,434 INFO main - mod_point ModificPoint=BlockBorder line: 175, el: CtLocalVariableImpl
+2017-01-31 22:23:47,435 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 9 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:49,866 INFO main - mod_point ModificPoint=BlockBorder line: 176, el: CtIfImpl
+2017-01-31 22:23:49,867 INFO main - -->op: ReplaceIfBooleanOp: `if (t > 0.0) { 	rect.setR[...] ` ---> `if (true) { 	rect.setRect[...]` at pos 10 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:53,500 INFO main - mod_point ModificPoint=BlockBorder line: 176, el: CtIfImpl
+2017-01-31 22:23:53,501 INFO main - -->op: ReplaceIfBooleanOp: `if (t > 0.0) { 	rect.setR[...] ` ---> `if (false) { 	rect.setRec[...]` at pos 10 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:23:57,136 INFO main - mod_point ModificPoint=BlockBorder line: 176, el: CtIfImpl
+2017-01-31 22:23:57,137 INFO main - -->op: RemoveOp: `if (t > 0.0) { 	rect.setR[...] ` ---> `-` at pos 10 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:00,774 INFO main - mod_point ModificPoint=BlockBorder line: 180, el: CtIfImpl
+2017-01-31 22:24:00,775 INFO main - -->op: ReplaceIfBooleanOp: `if (b > 0.0) { 	rect.setR[...] ` ---> `if (true) { 	rect.setRect[...]` at pos 11 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:04,453 INFO main - mod_point ModificPoint=BlockBorder line: 180, el: CtIfImpl
+2017-01-31 22:24:04,453 INFO main - -->op: ReplaceIfBooleanOp: `if (b > 0.0) { 	rect.setR[...] ` ---> `if (false) { 	rect.setRec[...]` at pos 11 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:08,119 INFO main - mod_point ModificPoint=BlockBorder line: 180, el: CtIfImpl
+2017-01-31 22:24:08,119 INFO main - -->op: RemoveOp: `if (b > 0.0) { 	rect.setR[...] ` ---> `-` at pos 11 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:11,729 INFO main - mod_point ModificPoint=BlockBorder line: 184, el: CtIfImpl
+2017-01-31 22:24:11,729 INFO main - -->op: ReplaceIfBooleanOp: `if (l > 0.0) { 	rect.setR[...] ` ---> `if (true) { 	rect.setRect[...]` at pos 12 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:15,690 INFO main - mod_point ModificPoint=BlockBorder line: 184, el: CtIfImpl
+2017-01-31 22:24:15,690 INFO main - -->op: ReplaceIfBooleanOp: `if (l > 0.0) { 	rect.setR[...] ` ---> `if (false) { 	rect.setRec[...]` at pos 12 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:19,436 INFO main - mod_point ModificPoint=BlockBorder line: 184, el: CtIfImpl
+2017-01-31 22:24:19,437 INFO main - -->op: RemoveOp: `if (l > 0.0) { 	rect.setR[...] ` ---> `-` at pos 12 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:23,043 INFO main - mod_point ModificPoint=BlockBorder line: 188, el: CtIfImpl
+2017-01-31 22:24:23,044 INFO main - -->op: ReplaceIfBooleanOp: `if (r > 0.0) { 	rect.setR[...] ` ---> `if (true) { 	rect.setRect[...]` at pos 13 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:26,683 INFO main - mod_point ModificPoint=BlockBorder line: 188, el: CtIfImpl
+2017-01-31 22:24:26,683 INFO main - -->op: ReplaceIfBooleanOp: `if (r > 0.0) { 	rect.setR[...] ` ---> `if (false) { 	rect.setRec[...]` at pos 13 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:31,014 INFO main - mod_point ModificPoint=BlockBorder line: 188, el: CtIfImpl
+2017-01-31 22:24:31,015 INFO main - -->op: RemoveOp: `if (r > 0.0) { 	rect.setR[...] ` ---> `-` at pos 13 of parent `{ 	double t = org.jfree.c[...]`
+2017-01-31 22:24:34,650 INFO main - mod_point ModificPoint=RectangleInsets line: 501, el: CtReturnImpl
+2017-01-31 22:24:34,650 INFO main - -->op: RemoveOp: `return (width - (calculat[...] ` ---> `-` at pos 0 of parent `{ 	return (width - (calcu[...]`
+2017-01-31 22:24:36,928 INFO main - mod_point ModificPoint=RectangleInsets line: 523, el: CtReturnImpl
+2017-01-31 22:24:36,929 INFO main - -->op: RemoveOp: `return (height - (calcula[...] ` ---> `-` at pos 0 of parent `{ 	return (height - (calc[...]`
+2017-01-31 22:24:39,277 INFO main - mod_point ModificPoint=RectangleInsets line: 545, el: CtLocalVariableImpl
+2017-01-31 22:24:39,277 INFO main - -->op: RemoveOp: `double w = area.getWidth([...] ` ---> `-` at pos 0 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:24:41,554 INFO main - mod_point ModificPoint=RectangleInsets line: 546, el: CtLocalVariableImpl
+2017-01-31 22:24:41,554 INFO main - -->op: RemoveOp: `double h = area.getHeight[...] ` ---> `-` at pos 1 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:24:43,836 INFO main - mod_point ModificPoint=RectangleInsets line: 547, el: CtLocalVariableImpl
+2017-01-31 22:24:43,836 INFO main - -->op: RemoveOp: `double l = calculateLeftI[...] ` ---> `-` at pos 2 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:24:46,203 INFO main - mod_point ModificPoint=RectangleInsets line: 548, el: CtLocalVariableImpl
+2017-01-31 22:24:46,203 INFO main - -->op: RemoveOp: `double r = calculateRight[...] ` ---> `-` at pos 3 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:24:48,488 INFO main - mod_point ModificPoint=RectangleInsets line: 549, el: CtLocalVariableImpl
+2017-01-31 22:24:48,488 INFO main - -->op: RemoveOp: `double t = calculateTopIn[...] ` ---> `-` at pos 4 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:24:50,872 INFO main - mod_point ModificPoint=RectangleInsets line: 550, el: CtLocalVariableImpl
+2017-01-31 22:24:50,872 INFO main - -->op: RemoveOp: `double b = calculateBotto[...] ` ---> `-` at pos 5 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:24:53,234 INFO main - mod_point ModificPoint=RectangleInsets line: 551, el: CtInvocationImpl
+2017-01-31 22:24:53,235 INFO main - -->op: RemoveOp: `area.setRect(((area.getX([...] ` ---> `-` at pos 6 of parent `{ 	double w = area.getWid[...]`
+2017-01-31 22:24:56,910 INFO main - mod_point ModificPoint=BlockParams line: 85, el: CtReturnImpl
+2017-01-31 22:24:56,911 INFO main - -->op: RemoveOp: `return org.jfree.chart.bl[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:24:59,223 INFO main - mod_point ModificPoint=BlockParams line: 94, el: CtAssignmentImpl
+2017-01-31 22:24:59,223 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Blo[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:25:03,216 INFO main - mod_point ModificPoint=TextUtilities line: 288, el: CtIfImpl
+2017-01-31 22:25:03,216 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.text.[...] ` ---> `if (true) { 	bounds = fm.[...]` at pos 1 of parent `{ 	final java.awt.geom.Re[...]`
+2017-01-31 22:25:06,815 INFO main - mod_point ModificPoint=TextUtilities line: 288, el: CtIfImpl
+2017-01-31 22:25:06,815 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.text.[...] ` ---> `if (false) { 	bounds = fm[...]` at pos 1 of parent `{ 	final java.awt.geom.Re[...]`
+2017-01-31 22:25:10,388 INFO main - mod_point ModificPoint=TextUtilities line: 288, el: CtIfImpl
+2017-01-31 22:25:10,388 INFO main - -->op: RemoveOp: `if (org.jfree.chart.text.[...] ` ---> `-` at pos 1 of parent `{ 	final java.awt.geom.Re[...]`
+2017-01-31 22:25:12,708 INFO main - mod_point ModificPoint=TextUtilities line: 289, el: CtAssignmentImpl
+2017-01-31 22:25:12,709 INFO main - -->op: RemoveOp: `bounds = fm.getStringBoun[...] ` ---> `-` at pos 0 of parent `{ 	bounds = fm.getStringB[...]`
+2017-01-31 22:25:15,108 INFO main - mod_point ModificPoint=TextUtilities line: 293, el: CtLocalVariableImpl
+2017-01-31 22:25:15,108 INFO main - -->op: RemoveOp: `java.awt.font.LineMetrics[...] ` ---> `-` at pos 1 of parent `{ 	bounds = fm.getStringB[...]`
+2017-01-31 22:25:17,431 INFO main - mod_point ModificPoint=TextUtilities line: 295, el: CtInvocationImpl
+2017-01-31 22:25:17,431 INFO main - -->op: RemoveOp: `bounds.setRect(bounds.get[...] ` ---> `-` at pos 2 of parent `{ 	bounds = fm.getStringB[...]`
+2017-01-31 22:25:21,231 INFO main - mod_point ModificPoint=TextUtilities line: 304, el: CtReturnImpl
+2017-01-31 22:25:21,231 INFO main - -->op: RemoveOp: `return bounds ` ---> `-` at pos 2 of parent `{ 	final java.awt.geom.Re[...]`
+2017-01-31 22:25:23,624 INFO main - mod_point ModificPoint=TextUtilities line: 476, el: CtIfImpl
+2017-01-31 22:25:23,624 INFO main - -->op: ReplaceIfBooleanOp: `if ((text == null) || (te[...] ` ---> `if (true) { 	return ; } ` at pos 0 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:27,303 INFO main - mod_point ModificPoint=TextUtilities line: 476, el: CtIfImpl
+2017-01-31 22:25:27,303 INFO main - -->op: ReplaceIfBooleanOp: `if ((text == null) || (te[...] ` ---> `if (false) { 	return ; } ` at pos 0 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:31,008 INFO main - mod_point ModificPoint=TextUtilities line: 476, el: CtIfImpl
+2017-01-31 22:25:31,008 INFO main - -->op: RemoveOp: `if ((text == null) || (te[...] ` ---> `-` at pos 0 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:34,600 INFO main - mod_point ModificPoint=TextUtilities line: 480, el: CtLocalVariableImpl
+2017-01-31 22:25:34,600 INFO main - -->op: RemoveOp: `java.awt.geom.AffineTrans[...] ` ---> `-` at pos 1 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:36,928 INFO main - mod_point ModificPoint=TextUtilities line: 483, el: CtLocalVariableImpl
+2017-01-31 22:25:36,928 INFO main - -->op: RemoveOp: `java.awt.geom.AffineTrans[...] ` ---> `-` at pos 2 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:39,246 INFO main - mod_point ModificPoint=TextUtilities line: 485, el: CtInvocationImpl
+2017-01-31 22:25:39,246 INFO main - -->op: RemoveOp: `g2.transform(rotate) ` ---> `-` at pos 3 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:42,921 INFO main - mod_point ModificPoint=TextUtilities line: 487, el: CtIfImpl
+2017-01-31 22:25:42,921 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.text.[...] ` ---> `if (true) { 	java.awt.fon[...]` at pos 4 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:48,673 INFO main - mod_point ModificPoint=TextUtilities line: 487, el: CtIfImpl
+2017-01-31 22:25:48,673 INFO main - -->op: ReplaceIfBooleanOp: `if (org.jfree.chart.text.[...] ` ---> `if (false) { 	java.awt.fo[...]` at pos 4 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:52,552 INFO main - mod_point ModificPoint=TextUtilities line: 487, el: CtIfImpl
+2017-01-31 22:25:52,552 INFO main - -->op: RemoveOp: `if (org.jfree.chart.text.[...] ` ---> `-` at pos 4 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:25:56,244 INFO main - mod_point ModificPoint=TextUtilities line: 495, el: CtInvocationImpl
+2017-01-31 22:25:56,244 INFO main - -->op: RemoveOp: `g2.drawString(text, textX[...] ` ---> `-` at pos 0 of parent `{ 	g2.drawString(text, te[...]`
+2017-01-31 22:25:59,787 INFO main - mod_point ModificPoint=TextUtilities line: 497, el: CtInvocationImpl
+2017-01-31 22:25:59,787 INFO main - -->op: RemoveOp: `g2.setTransform(saved) ` ---> `-` at pos 5 of parent `{ 	if ((text == null) || [...]`
+2017-01-31 22:26:03,490 INFO main - mod_point ModificPoint=TextUtilities line: 602, el: CtLocalVariableImpl
+2017-01-31 22:26:03,490 INFO main - -->op: RemoveOp: `float[] result = new floa[...] ` ---> `-` at pos 0 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:05,905 INFO main - mod_point ModificPoint=TextUtilities line: 603, el: CtLocalVariableImpl
+2017-01-31 22:26:05,906 INFO main - -->op: RemoveOp: `java.awt.font.FontRenderC[...] ` ---> `-` at pos 1 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:08,228 INFO main - mod_point ModificPoint=TextUtilities line: 604, el: CtLocalVariableImpl
+2017-01-31 22:26:08,229 INFO main - -->op: RemoveOp: `java.awt.Font f = g2.getF[...] ` ---> `-` at pos 2 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:10,553 INFO main - mod_point ModificPoint=TextUtilities line: 605, el: CtLocalVariableImpl
+2017-01-31 22:26:10,554 INFO main - -->op: RemoveOp: `java.awt.FontMetrics fm =[...] ` ---> `-` at pos 3 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:12,976 INFO main - mod_point ModificPoint=TextUtilities line: 606, el: CtLocalVariableImpl
+2017-01-31 22:26:12,976 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 4 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:15,296 INFO main - mod_point ModificPoint=TextUtilities line: 607, el: CtLocalVariableImpl
+2017-01-31 22:26:15,297 INFO main - -->op: RemoveOp: `java.awt.font.LineMetrics[...] ` ---> `-` at pos 5 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:17,632 INFO main - mod_point ModificPoint=TextUtilities line: 608, el: CtLocalVariableImpl
+2017-01-31 22:26:17,633 INFO main - -->op: RemoveOp: `float ascent = metrics.ge[...] ` ---> `-` at pos 6 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:20,070 INFO main - mod_point ModificPoint=TextUtilities line: 609, el: CtLocalVariableImpl
+2017-01-31 22:26:20,070 INFO main - -->op: RemoveOp: `float halfAscent = ascent[...] ` ---> `-` at pos 7 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:22,416 INFO main - mod_point ModificPoint=TextUtilities line: 610, el: CtLocalVariableImpl
+2017-01-31 22:26:22,417 INFO main - -->op: RemoveOp: `float descent = metrics.g[...] ` ---> `-` at pos 8 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:24,766 INFO main - mod_point ModificPoint=TextUtilities line: 611, el: CtLocalVariableImpl
+2017-01-31 22:26:24,767 INFO main - -->op: RemoveOp: `float leading = metrics.g[...] ` ---> `-` at pos 9 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:27,094 INFO main - mod_point ModificPoint=TextUtilities line: 612, el: CtLocalVariableImpl
+2017-01-31 22:26:27,094 INFO main - -->op: RemoveOp: `float xAdj = 0.0F ` ---> `-` at pos 10 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:29,493 INFO main - mod_point ModificPoint=TextUtilities line: 613, el: CtLocalVariableImpl
+2017-01-31 22:26:29,493 INFO main - -->op: RemoveOp: `float yAdj = 0.0F ` ---> `-` at pos 11 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:31,835 INFO main - mod_point ModificPoint=TextUtilities line: 615, el: CtIfImpl
+2017-01-31 22:26:31,835 INFO main - -->op: ReplaceIfBooleanOp: `if (((((anchor == (org.jf[...] ` ---> `if (true) { 	xAdj = ((flo[...]` at pos 12 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:35,470 INFO main - mod_point ModificPoint=TextUtilities line: 615, el: CtIfImpl
+2017-01-31 22:26:35,470 INFO main - -->op: ReplaceIfBooleanOp: `if (((((anchor == (org.jf[...] ` ---> `if (false) { 	xAdj = ((fl[...]` at pos 12 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:39,254 INFO main - mod_point ModificPoint=TextUtilities line: 615, el: CtIfImpl
+2017-01-31 22:26:39,255 INFO main - -->op: RemoveOp: `if (((((anchor == (org.jf[...] ` ---> `-` at pos 12 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:43,248 INFO main - mod_point ModificPoint=TextUtilities line: 624, el: CtIfImpl
+2017-01-31 22:26:43,249 INFO main - -->op: ReplaceIfBooleanOp: `if (((((anchor == (org.jf[...] ` ---> `if (true) { 	xAdj = ((flo[...]` at pos 0 of parent `{ 	if (((((anchor == (org[...]`
+2017-01-31 22:26:46,910 INFO main - mod_point ModificPoint=TextUtilities line: 624, el: CtIfImpl
+2017-01-31 22:26:46,910 INFO main - -->op: ReplaceIfBooleanOp: `if (((((anchor == (org.jf[...] ` ---> `if (false) { 	xAdj = ((fl[...]` at pos 0 of parent `{ 	if (((((anchor == (org[...]`
+2017-01-31 22:26:50,660 INFO main - mod_point ModificPoint=TextUtilities line: 624, el: CtIfImpl
+2017-01-31 22:26:50,661 INFO main - -->op: RemoveOp: `if (((((anchor == (org.jf[...] ` ---> `-` at pos 0 of parent `{ 	if (((((anchor == (org[...]`
+2017-01-31 22:26:54,393 INFO main - mod_point ModificPoint=TextUtilities line: 634, el: CtIfImpl
+2017-01-31 22:26:54,393 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (true) { 	yAdj = ((-de[...]` at pos 13 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:26:58,345 INFO main - mod_point ModificPoint=TextUtilities line: 634, el: CtIfImpl
+2017-01-31 22:26:58,346 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (false) { 	yAdj = ((-d[...]` at pos 13 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:27:02,055 INFO main - mod_point ModificPoint=TextUtilities line: 634, el: CtIfImpl
+2017-01-31 22:27:02,056 INFO main - -->op: RemoveOp: `if (((anchor == (org.jfre[...] ` ---> `-` at pos 13 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:27:05,698 INFO main - mod_point ModificPoint=TextUtilities line: 641, el: CtIfImpl
+2017-01-31 22:27:05,699 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (true) { 	yAdj = halfA[...]` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:27:09,559 INFO main - mod_point ModificPoint=TextUtilities line: 641, el: CtIfImpl
+2017-01-31 22:27:09,559 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (false) { 	yAdj = half[...]` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:27:13,257 INFO main - mod_point ModificPoint=TextUtilities line: 641, el: CtIfImpl
+2017-01-31 22:27:13,258 INFO main - -->op: RemoveOp: `if (((anchor == (org.jfre[...] ` ---> `-` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:27:17,478 INFO main - mod_point ModificPoint=TextUtilities line: 648, el: CtIfImpl
+2017-01-31 22:27:17,479 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (true) { 	yAdj = ((-de[...]` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:27:21,091 INFO main - mod_point ModificPoint=TextUtilities line: 648, el: CtIfImpl
+2017-01-31 22:27:21,092 INFO main - -->op: ReplaceIfBooleanOp: `if (((anchor == (org.jfre[...] ` ---> `if (false) { 	yAdj = ((-d[...]` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:27:24,739 INFO main - mod_point ModificPoint=TextUtilities line: 648, el: CtIfImpl
+2017-01-31 22:27:24,739 INFO main - -->op: RemoveOp: `if (((anchor == (org.jfre[...] ` ---> `-` at pos 0 of parent `{ 	if (((anchor == (org.j[...]`
+2017-01-31 22:27:28,392 INFO main - mod_point ModificPoint=TextUtilities line: 669, el: CtAssignmentImpl
+2017-01-31 22:27:28,393 INFO main - -->op: RemoveOp: `result[0] = xAdj ` ---> `-` at pos 14 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:27:32,033 INFO main - mod_point ModificPoint=TextUtilities line: 670, el: CtAssignmentImpl
+2017-01-31 22:27:32,034 INFO main - -->op: RemoveOp: `result[1] = yAdj ` ---> `-` at pos 15 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:27:35,798 INFO main - mod_point ModificPoint=TextUtilities line: 671, el: CtReturnImpl
+2017-01-31 22:27:35,799 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 16 of parent `{ 	float[] result = new f[...]`
+2017-01-31 22:27:38,136 INFO main - mod_point ModificPoint=AbstractBlock line: 383, el: CtLocalVariableImpl
+2017-01-31 22:27:38,137 INFO main - -->op: RemoveOp: `double result = org.jfree[...] ` ---> `-` at pos 0 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:27:40,427 INFO main - mod_point ModificPoint=AbstractBlock line: 384, el: CtAssignmentImpl
+2017-01-31 22:27:40,427 INFO main - -->op: RemoveOp: `result = org.jfree.chart.[...] ` ---> `-` at pos 1 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:27:44,171 INFO main - mod_point ModificPoint=AbstractBlock line: 385, el: CtAssignmentImpl
+2017-01-31 22:27:44,172 INFO main - -->op: RemoveOp: `result = org.jfree.chart.[...] ` ---> `-` at pos 2 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:27:47,855 INFO main - mod_point ModificPoint=AbstractBlock line: 386, el: CtReturnImpl
+2017-01-31 22:27:47,856 INFO main - -->op: RemoveOp: `return java.lang.Math.max[...] ` ---> `-` at pos 3 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:27:50,131 INFO main - mod_point ModificPoint=AbstractBlock line: 401, el: CtLocalVariableImpl
+2017-01-31 22:27:50,131 INFO main - -->op: RemoveOp: `double result = org.jfree[...] ` ---> `-` at pos 0 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:27:52,406 INFO main - mod_point ModificPoint=AbstractBlock line: 402, el: CtAssignmentImpl
+2017-01-31 22:27:52,406 INFO main - -->op: RemoveOp: `result = org.jfree.chart.[...] ` ---> `-` at pos 1 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:27:56,220 INFO main - mod_point ModificPoint=AbstractBlock line: 403, el: CtAssignmentImpl
+2017-01-31 22:27:56,220 INFO main - -->op: RemoveOp: `result = org.jfree.chart.[...] ` ---> `-` at pos 2 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:27:59,819 INFO main - mod_point ModificPoint=AbstractBlock line: 404, el: CtReturnImpl
+2017-01-31 22:27:59,820 INFO main - -->op: RemoveOp: `return java.lang.Math.max[...] ` ---> `-` at pos 3 of parent `{ 	double result = org.jf[...]`
+2017-01-31 22:28:02,088 INFO main - mod_point ModificPoint=AbstractBlock line: 422, el: CtLocalVariableImpl
+2017-01-31 22:28:02,088 INFO main - -->op: RemoveOp: `double w = c.getWidth() ` ---> `-` at pos 2 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:04,448 INFO main - mod_point ModificPoint=AbstractBlock line: 423, el: CtLocalVariableImpl
+2017-01-31 22:28:04,448 INFO main - -->op: RemoveOp: `org.jfree.data.Range wr =[...] ` ---> `-` at pos 3 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:06,715 INFO main - mod_point ModificPoint=AbstractBlock line: 424, el: CtLocalVariableImpl
+2017-01-31 22:28:06,716 INFO main - -->op: RemoveOp: `double h = c.getHeight() ` ---> `-` at pos 4 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:08,985 INFO main - mod_point ModificPoint=AbstractBlock line: 425, el: CtLocalVariableImpl
+2017-01-31 22:28:08,985 INFO main - -->op: RemoveOp: `org.jfree.data.Range hr =[...] ` ---> `-` at pos 5 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:11,334 INFO main - mod_point ModificPoint=AbstractBlock line: 426, el: CtLocalVariableImpl
+2017-01-31 22:28:11,335 INFO main - -->op: RemoveOp: `double ww = trimToContent[...] ` ---> `-` at pos 6 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:13,617 INFO main - mod_point ModificPoint=AbstractBlock line: 427, el: CtLocalVariableImpl
+2017-01-31 22:28:13,618 INFO main - -->op: RemoveOp: `double hh = trimToContent[...] ` ---> `-` at pos 7 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:15,890 INFO main - mod_point ModificPoint=AbstractBlock line: 428, el: CtLocalVariableImpl
+2017-01-31 22:28:15,890 INFO main - -->op: RemoveOp: `org.jfree.data.Range wwr [...] ` ---> `-` at pos 8 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:18,239 INFO main - mod_point ModificPoint=AbstractBlock line: 429, el: CtLocalVariableImpl
+2017-01-31 22:28:18,239 INFO main - -->op: RemoveOp: `org.jfree.data.Range hhr [...] ` ---> `-` at pos 9 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:20,507 INFO main - mod_point ModificPoint=AbstractBlock line: 430, el: CtReturnImpl
+2017-01-31 22:28:20,507 INFO main - -->op: RemoveOp: `return new org.jfree.char[...] ` ---> `-` at pos 10 of parent `{ 	if (c == null) { 		thr[...]`
+2017-01-31 22:28:22,778 INFO main - mod_point ModificPoint=AbstractBlock line: 437, el: CtIfImpl
+2017-01-31 22:28:22,779 INFO main - -->op: ReplaceIfBooleanOp: `if (r == null) { 	return [...] ` ---> `if (true) { 	return null;[...]` at pos 0 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:26,690 INFO main - mod_point ModificPoint=AbstractBlock line: 437, el: CtIfImpl
+2017-01-31 22:28:26,690 INFO main - -->op: ReplaceIfBooleanOp: `if (r == null) { 	return [...] ` ---> `if (false) { 	return null[...]` at pos 0 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:30,344 INFO main - mod_point ModificPoint=AbstractBlock line: 437, el: CtIfImpl
+2017-01-31 22:28:30,345 INFO main - -->op: RemoveOp: `if (r == null) { 	return [...] ` ---> `-` at pos 0 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:33,881 INFO main - mod_point ModificPoint=AbstractBlock line: 440, el: CtLocalVariableImpl
+2017-01-31 22:28:33,881 INFO main - -->op: RemoveOp: `double lowerBound = 0.0 ` ---> `-` at pos 1 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:36,259 INFO main - mod_point ModificPoint=AbstractBlock line: 441, el: CtLocalVariableImpl
+2017-01-31 22:28:36,259 INFO main - -->op: RemoveOp: `double upperBound = java.[...] ` ---> `-` at pos 2 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:38,530 INFO main - mod_point ModificPoint=AbstractBlock line: 442, el: CtIfImpl
+2017-01-31 22:28:38,530 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getLowerBound()) >[...] ` ---> `if (true) { 	lowerBound =[...]` at pos 3 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:42,166 INFO main - mod_point ModificPoint=AbstractBlock line: 442, el: CtIfImpl
+2017-01-31 22:28:42,166 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getLowerBound()) >[...] ` ---> `if (false) { 	lowerBound [...]` at pos 3 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:45,990 INFO main - mod_point ModificPoint=AbstractBlock line: 442, el: CtIfImpl
+2017-01-31 22:28:45,990 INFO main - -->op: RemoveOp: `if ((r.getLowerBound()) >[...] ` ---> `-` at pos 3 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:50,119 INFO main - mod_point ModificPoint=AbstractBlock line: 445, el: CtIfImpl
+2017-01-31 22:28:50,119 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getUpperBound()) <[...] ` ---> `if (true) { 	upperBound =[...]` at pos 4 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:54,060 INFO main - mod_point ModificPoint=AbstractBlock line: 445, el: CtIfImpl
+2017-01-31 22:28:54,060 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getUpperBound()) <[...] ` ---> `if (false) { 	upperBound [...]` at pos 4 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:28:57,862 INFO main - mod_point ModificPoint=AbstractBlock line: 445, el: CtIfImpl
+2017-01-31 22:28:57,863 INFO main - -->op: RemoveOp: `if ((r.getUpperBound()) <[...] ` ---> `-` at pos 4 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:01,497 INFO main - mod_point ModificPoint=AbstractBlock line: 446, el: CtAssignmentImpl
+2017-01-31 22:29:01,497 INFO main - -->op: RemoveOp: `upperBound = trimToConten[...] ` ---> `-` at pos 0 of parent `{ 	upperBound = trimToCon[...]`
+2017-01-31 22:29:05,118 INFO main - mod_point ModificPoint=AbstractBlock line: 448, el: CtReturnImpl
+2017-01-31 22:29:05,118 INFO main - -->op: RemoveOp: `return new org.jfree.data[...] ` ---> `-` at pos 5 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:07,390 INFO main - mod_point ModificPoint=AbstractBlock line: 452, el: CtIfImpl
+2017-01-31 22:29:07,390 INFO main - -->op: ReplaceIfBooleanOp: `if (r == null) { 	return [...] ` ---> `if (true) { 	return null;[...]` at pos 0 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:11,255 INFO main - mod_point ModificPoint=AbstractBlock line: 452, el: CtIfImpl
+2017-01-31 22:29:11,255 INFO main - -->op: ReplaceIfBooleanOp: `if (r == null) { 	return [...] ` ---> `if (false) { 	return null[...]` at pos 0 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:14,914 INFO main - mod_point ModificPoint=AbstractBlock line: 452, el: CtIfImpl
+2017-01-31 22:29:14,914 INFO main - -->op: RemoveOp: `if (r == null) { 	return [...] ` ---> `-` at pos 0 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:18,682 INFO main - mod_point ModificPoint=AbstractBlock line: 455, el: CtLocalVariableImpl
+2017-01-31 22:29:18,682 INFO main - -->op: RemoveOp: `double lowerBound = 0.0 ` ---> `-` at pos 1 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:21,025 INFO main - mod_point ModificPoint=AbstractBlock line: 456, el: CtLocalVariableImpl
+2017-01-31 22:29:21,026 INFO main - -->op: RemoveOp: `double upperBound = java.[...] ` ---> `-` at pos 2 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:23,295 INFO main - mod_point ModificPoint=AbstractBlock line: 457, el: CtIfImpl
+2017-01-31 22:29:23,295 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getLowerBound()) >[...] ` ---> `if (true) { 	lowerBound =[...]` at pos 3 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:26,953 INFO main - mod_point ModificPoint=AbstractBlock line: 457, el: CtIfImpl
+2017-01-31 22:29:26,954 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getLowerBound()) >[...] ` ---> `if (false) { 	lowerBound [...]` at pos 3 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:30,637 INFO main - mod_point ModificPoint=AbstractBlock line: 457, el: CtIfImpl
+2017-01-31 22:29:30,638 INFO main - -->op: RemoveOp: `if ((r.getLowerBound()) >[...] ` ---> `-` at pos 3 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:34,201 INFO main - mod_point ModificPoint=AbstractBlock line: 460, el: CtIfImpl
+2017-01-31 22:29:34,201 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getUpperBound()) <[...] ` ---> `if (true) { 	upperBound =[...]` at pos 4 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:37,840 INFO main - mod_point ModificPoint=AbstractBlock line: 460, el: CtIfImpl
+2017-01-31 22:29:37,840 INFO main - -->op: ReplaceIfBooleanOp: `if ((r.getUpperBound()) <[...] ` ---> `if (false) { 	upperBound [...]` at pos 4 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:41,519 INFO main - mod_point ModificPoint=AbstractBlock line: 460, el: CtIfImpl
+2017-01-31 22:29:41,519 INFO main - -->op: RemoveOp: `if ((r.getUpperBound()) <[...] ` ---> `-` at pos 4 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:45,219 INFO main - mod_point ModificPoint=AbstractBlock line: 461, el: CtAssignmentImpl
+2017-01-31 22:29:45,219 INFO main - -->op: RemoveOp: `upperBound = trimToConten[...] ` ---> `-` at pos 0 of parent `{ 	upperBound = trimToCon[...]`
+2017-01-31 22:29:48,938 INFO main - mod_point ModificPoint=AbstractBlock line: 463, el: CtReturnImpl
+2017-01-31 22:29:48,938 INFO main - -->op: RemoveOp: `return new org.jfree.data[...] ` ---> `-` at pos 5 of parent `{ 	if (r == null) { 		ret[...]`
+2017-01-31 22:29:51,297 INFO main - mod_point ModificPoint=AbstractBlock line: 506, el: CtInvocationImpl
+2017-01-31 22:29:51,297 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Abs[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:29:54,939 INFO main - mod_point ModificPoint=AbstractBlock line: 507, el: CtReturnImpl
+2017-01-31 22:29:54,940 INFO main - -->op: RemoveOp: `return area ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:29:57,313 INFO main - mod_point ModificPoint=AbstractBlock line: 520, el: CtInvocationImpl
+2017-01-31 22:29:57,313 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Abs[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:30:00,985 INFO main - mod_point ModificPoint=AbstractBlock line: 521, el: CtReturnImpl
+2017-01-31 22:30:00,985 INFO main - -->op: RemoveOp: `return area ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:30:03,252 INFO main - mod_point ModificPoint=AbstractBlock line: 534, el: CtInvocationImpl
+2017-01-31 22:30:03,252 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Abs[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:30:06,920 INFO main - mod_point ModificPoint=AbstractBlock line: 535, el: CtReturnImpl
+2017-01-31 22:30:06,921 INFO main - -->op: RemoveOp: `return area ` ---> `-` at pos 1 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:30:09,297 INFO main - mod_point ModificPoint=AbstractBlock line: 545, el: CtInvocationImpl
+2017-01-31 22:30:09,297 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Abs[...] ` ---> `-` at pos 0 of parent `{ 	org.jfree.chart.block.[...]`
+2017-01-31 22:30:12,875 INFO main - mod_point ModificPoint=BlockContainer line: 118, el: CtIfImpl
+2017-01-31 22:30:12,875 INFO main - -->op: ReplaceIfBooleanOp: `if (arrangement == null) [...] ` ---> `if (true) { 	throw new ja[...]` at pos 0 of parent `{ 	if (arrangement == nul[...]`
+2017-01-31 22:30:16,574 INFO main - mod_point ModificPoint=BlockContainer line: 118, el: CtIfImpl
+2017-01-31 22:30:16,575 INFO main - -->op: ReplaceIfBooleanOp: `if (arrangement == null) [...] ` ---> `if (false) { 	throw new j[...]` at pos 0 of parent `{ 	if (arrangement == nul[...]`
+2017-01-31 22:30:20,188 INFO main - mod_point ModificPoint=BlockContainer line: 118, el: CtIfImpl
+2017-01-31 22:30:20,189 INFO main - -->op: RemoveOp: `if (arrangement == null) [...] ` ---> `-` at pos 0 of parent `{ 	if (arrangement == nul[...]`
+2017-01-31 22:30:24,139 INFO main - mod_point ModificPoint=BlockContainer line: 121, el: CtAssignmentImpl
+2017-01-31 22:30:24,140 INFO main - -->op: RemoveOp: `org.jfree.chart.block.Blo[...] ` ---> `-` at pos 1 of parent `{ 	if (arrangement == nul[...]`
+2017-01-31 22:30:27,895 INFO main - mod_point ModificPoint=JFreeChart line: 457, el: CtReturnImpl
+2017-01-31 22:30:27,895 INFO main - -->op: RemoveOp: `return org.jfree.chart.JF[...] ` ---> `-` at pos 0 of parent `{ 	return org.jfree.chart[...]`
+2017-01-31 22:30:30,172 INFO main - mod_point ModificPoint=JFreeChart line: 1136, el: CtInvocationImpl
+2017-01-31 22:30:30,173 INFO main - -->op: RemoveOp: `notifyListeners(new org.j[...] ` ---> `-` at pos 0 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:33,873 INFO main - mod_point ModificPoint=JFreeChart line: 1140, el: CtIfImpl
+2017-01-31 22:30:33,874 INFO main - -->op: ReplaceIfBooleanOp: `if (info != null) { 	info[...] ` ---> `if (true) { 	info.clear()[...]` at pos 1 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:37,310 INFO main - mod_point ModificPoint=JFreeChart line: 1140, el: CtIfImpl
+2017-01-31 22:30:37,312 INFO main - -->op: ReplaceIfBooleanOp: `if (info != null) { 	info[...] ` ---> `if (false) { 	info.clear([...]` at pos 1 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:41,044 INFO main - mod_point ModificPoint=JFreeChart line: 1140, el: CtIfImpl
+2017-01-31 22:30:41,045 INFO main - -->op: RemoveOp: `if (info != null) { 	info[...] ` ---> `-` at pos 1 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:44,810 INFO main - mod_point ModificPoint=JFreeChart line: 1146, el: CtLocalVariableImpl
+2017-01-31 22:30:44,811 INFO main - -->op: RemoveOp: `java.awt.Shape savedClip [...] ` ---> `-` at pos 2 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:47,093 INFO main - mod_point ModificPoint=JFreeChart line: 1147, el: CtInvocationImpl
+2017-01-31 22:30:47,095 INFO main - -->op: RemoveOp: `g2.clip(chartArea) ` ---> `-` at pos 3 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:50,665 INFO main - mod_point ModificPoint=JFreeChart line: 1149, el: CtInvocationImpl
+2017-01-31 22:30:50,667 INFO main - -->op: RemoveOp: `g2.addRenderingHints(org.[...] ` ---> `-` at pos 4 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:54,435 INFO main - mod_point ModificPoint=JFreeChart line: 1152, el: CtIfImpl
+2017-01-31 22:30:54,436 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.JFre[...] ` ---> `if (true) { 	g2.setPaint([...]` at pos 5 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:30:58,007 INFO main - mod_point ModificPoint=JFreeChart line: 1152, el: CtIfImpl
+2017-01-31 22:30:58,008 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.JFre[...] ` ---> `if (false) { 	g2.setPaint[...]` at pos 5 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:01,778 INFO main - mod_point ModificPoint=JFreeChart line: 1152, el: CtIfImpl
+2017-01-31 22:31:01,779 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.JFre[...] ` ---> `-` at pos 5 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:05,395 INFO main - mod_point ModificPoint=JFreeChart line: 1153, el: CtInvocationImpl
+2017-01-31 22:31:05,395 INFO main - -->op: RemoveOp: `g2.setPaint(org.jfree.cha[...] ` ---> `-` at pos 0 of parent `{ 	g2.setPaint(org.jfree.[...]`
+2017-01-31 22:31:09,168 INFO main - mod_point ModificPoint=JFreeChart line: 1154, el: CtInvocationImpl
+2017-01-31 22:31:09,169 INFO main - -->op: RemoveOp: `g2.fill(chartArea) ` ---> `-` at pos 1 of parent `{ 	g2.setPaint(org.jfree.[...]`
+2017-01-31 22:31:12,876 INFO main - mod_point ModificPoint=JFreeChart line: 1157, el: CtIfImpl
+2017-01-31 22:31:12,878 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.JFre[...] ` ---> `if (true) { 	java.awt.Com[...]` at pos 6 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:16,409 INFO main - mod_point ModificPoint=JFreeChart line: 1157, el: CtIfImpl
+2017-01-31 22:31:16,410 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.JFre[...] ` ---> `if (false) { 	java.awt.Co[...]` at pos 6 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:20,036 INFO main - mod_point ModificPoint=JFreeChart line: 1157, el: CtIfImpl
+2017-01-31 22:31:20,037 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.JFre[...] ` ---> `-` at pos 6 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:23,788 INFO main - mod_point ModificPoint=JFreeChart line: 1171, el: CtIfImpl
+2017-01-31 22:31:23,789 INFO main - -->op: ReplaceIfBooleanOp: `if (isBorderVisible()) { [...] ` ---> `if (true) { 	java.awt.Pai[...]` at pos 7 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:27,510 INFO main - mod_point ModificPoint=JFreeChart line: 1171, el: CtIfImpl
+2017-01-31 22:31:27,511 INFO main - -->op: ReplaceIfBooleanOp: `if (isBorderVisible()) { [...] ` ---> `if (false) { 	java.awt.Pa[...]` at pos 7 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:31,283 INFO main - mod_point ModificPoint=JFreeChart line: 1171, el: CtIfImpl
+2017-01-31 22:31:31,285 INFO main - -->op: RemoveOp: `if (isBorderVisible()) { [...] ` ---> `-` at pos 7 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:34,910 INFO main - mod_point ModificPoint=JFreeChart line: 1186, el: CtLocalVariableImpl
+2017-01-31 22:31:34,912 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 8 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:37,304 INFO main - mod_point ModificPoint=JFreeChart line: 1187, el: CtInvocationImpl
+2017-01-31 22:31:37,305 INFO main - -->op: RemoveOp: `nonTitleArea.setRect(char[...] ` ---> `-` at pos 9 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:40,819 INFO main - mod_point ModificPoint=JFreeChart line: 1188, el: CtInvocationImpl
+2017-01-31 22:31:40,820 INFO main - -->op: RemoveOp: `org.jfree.chart.JFreeChar[...] ` ---> `-` at pos 10 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:44,837 INFO main - mod_point ModificPoint=JFreeChart line: 1190, el: CtLocalVariableImpl
+2017-01-31 22:31:44,838 INFO main - -->op: RemoveOp: `org.jfree.chart.entity.En[...] ` ---> `-` at pos 11 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:47,127 INFO main - mod_point ModificPoint=JFreeChart line: 1191, el: CtIfImpl
+2017-01-31 22:31:47,128 INFO main - -->op: ReplaceIfBooleanOp: `if (info != null) { 	enti[...] ` ---> `if (true) { 	entities = i[...]` at pos 12 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:51,292 INFO main - mod_point ModificPoint=JFreeChart line: 1191, el: CtIfImpl
+2017-01-31 22:31:51,293 INFO main - -->op: ReplaceIfBooleanOp: `if (info != null) { 	enti[...] ` ---> `if (false) { 	entities = [...]` at pos 12 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:55,129 INFO main - mod_point ModificPoint=JFreeChart line: 1191, el: CtIfImpl
+2017-01-31 22:31:55,130 INFO main - -->op: RemoveOp: `if (info != null) { 	enti[...] ` ---> `-` at pos 12 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:31:59,048 INFO main - mod_point ModificPoint=JFreeChart line: 1194, el: CtIfImpl
+2017-01-31 22:31:59,049 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.JFre[...] ` ---> `if (true) { 	org.jfree.ch[...]` at pos 13 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:03,704 INFO main - mod_point ModificPoint=JFreeChart line: 1194, el: CtIfImpl
+2017-01-31 22:32:03,705 INFO main - -->op: ReplaceIfBooleanOp: `if ((org.jfree.chart.JFre[...] ` ---> `if (false) { 	org.jfree.c[...]` at pos 13 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:07,732 INFO main - mod_point ModificPoint=JFreeChart line: 1194, el: CtIfImpl
+2017-01-31 22:32:07,734 INFO main - -->op: RemoveOp: `if ((org.jfree.chart.JFre[...] ` ---> `-` at pos 13 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:11,291 INFO main - mod_point ModificPoint=JFreeChart line: 1202, el: CtLocalVariableImpl
+2017-01-31 22:32:11,292 INFO main - -->op: RemoveOp: `java.util.Iterator iterat[...] ` ---> `-` at pos 14 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:13,648 INFO main - mod_point ModificPoint=JFreeChart line: 1203, el: CtWhileImpl
+2017-01-31 22:32:13,650 INFO main - -->op: RemoveOp: `while (iterator.hasNext()[...] ` ---> `-` at pos 15 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:17,212 INFO main - mod_point ModificPoint=JFreeChart line: 1212, el: CtLocalVariableImpl
+2017-01-31 22:32:17,213 INFO main - -->op: RemoveOp: `java.awt.geom.Rectangle2D[...] ` ---> `-` at pos 16 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:19,501 INFO main - mod_point ModificPoint=JFreeChart line: 1215, el: CtLocalVariableImpl
+2017-01-31 22:32:19,502 INFO main - -->op: RemoveOp: `org.jfree.chart.plot.Plot[...] ` ---> `-` at pos 17 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:21,866 INFO main - mod_point ModificPoint=JFreeChart line: 1216, el: CtIfImpl
+2017-01-31 22:32:21,867 INFO main - -->op: ReplaceIfBooleanOp: `if (info != null) { 	plot[...] ` ---> `if (true) { 	plotInfo = i[...]` at pos 18 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:25,686 INFO main - mod_point ModificPoint=JFreeChart line: 1216, el: CtIfImpl
+2017-01-31 22:32:25,687 INFO main - -->op: ReplaceIfBooleanOp: `if (info != null) { 	plot[...] ` ---> `if (false) { 	plotInfo = [...]` at pos 18 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:29,327 INFO main - mod_point ModificPoint=JFreeChart line: 1216, el: CtIfImpl
+2017-01-31 22:32:29,328 INFO main - -->op: RemoveOp: `if (info != null) { 	plot[...] ` ---> `-` at pos 18 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:33,094 INFO main - mod_point ModificPoint=JFreeChart line: 1219, el: CtInvocationImpl
+2017-01-31 22:32:33,096 INFO main - -->op: RemoveOp: `org.jfree.chart.JFreeChar[...] ` ---> `-` at pos 19 of parent `{ 	notifyListeners(new or[...]`
+2017-01-31 22:32:57,063 INFO main - -Found Solution, child variant #562
+2017-01-31 22:32:57,065 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.text.G2TextMeasurer to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,093 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.text.TextBlock to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,114 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.BlockContainer to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,131 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.RectangleConstraint to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,176 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.title.Title to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,196 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.JFreeChart to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,329 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.text.TextLine to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,346 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.BlockParams to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,357 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.LineBorder to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,371 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.LegendItemCollection to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,403 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.title.TextTitle to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,440 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.BlockBorder to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,458 DEBUG spoon.support.StandardEnvironment - printing org.jfree.data.general.DatasetUtilities to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,528 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.title.LegendTitle to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,590 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.text.TextUtilities to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,607 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.text.TextFragment to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,626 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.plot.PiePlotState to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,644 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.AbstractBlock to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,670 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.BlockResult to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,681 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.ChartFactory to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,742 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.util.Size2D to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,755 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.plot.Plot to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,839 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.block.FlowArrangement to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:57,874 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.plot.PiePlot to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:58,310 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.util.RectangleInsets to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:58,331 DEBUG spoon.support.StandardEnvironment - printing org.jfree.chart.plot.PiePlot3D to /data/people/qx5/repsystem2/repair0_result/Chart_15_jKali/r7/AstorMain-Chart_15/src/variant-562
+2017-01-31 22:32:58,619 INFO main - 
+----SUMMARY_EXECUTION---
+2017-01-31 22:32:58,620 INFO main - 
+Solution details
+2017-01-31 22:32:58,620 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 562
+ 
+time(sec)= 1843
+operation: RemoveOp
+location= org.jfree.chart.JFreeChart
+line= 1219
+lineSuspiciousness= 0.102
+original statement= org.jfree.chart.JFreeChart.this.plot.draw(g2, plotArea, anchor, null, plotInfo)
+fixed statement= org.jfree.chart.JFreeChart.this.plot.draw(g2, plotArea, anchor, null, plotInfo)
+generation= 1
+ingredientScope= -
+validation=|true|0|3579|[]|
+2017-01-31 22:32:58,621 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 2030.756
