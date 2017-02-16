@@ -17,18 +17,18 @@ Run `ant compile` to compile all the source files.
 + In the script file `run`, change the value of `proj_dir` to the *absolute* path of your DiffTGen directory (if you haven't done so).
 
 + Run the script file `run` with arguments as follows:
-..* `-bugid`: the program id
-..* `-repairtool`: the repair tool id
-..* `-difftgendpath`: the path of your DiffTGen directory
-..* `-evosuitejpath`: the path of the EvoSuite jar (you may use the jar we provided in the `lib` directory)
-..* `-dependjpath`: the dependency jar path of the faulty program
-..* `-outputdpath`: the path of the output directory
-..* `-inputfpath`: the path of the input file indicating the syntactic deltas between the faulty program and the patched program
-..* `-oracleinputfpath`: the path of the oracle input file containing oracle methods
-..* `-evosuitetrials`: the number of the trials that EvoSuite runs
-..* `-evosuitetimeout`: EvoSuite's running timeout in seconds for a trial
-..* `-runparallel`: do you want to run the trials in parallel?
-..* `-stopifoverfittingfound`: do you want to stop running if an overfitting-indicative is found?
+  * `-bugid`: the program id
+  * `-repairtool`: the repair tool id
+  * `-difftgendpath`: the path of your DiffTGen directory
+  * `-evosuitejpath`: the path of the EvoSuite jar (you may use the jar we provided in the `lib` directory)
+  * `-dependjpath`: the dependency jar path of the faulty program
+  * `-outputdpath`: the path of the output directory
+  * `-inputfpath`: the path of the input file indicating the syntactic deltas between the faulty program and the patched program
+  * `-oracleinputfpath`: the path of the oracle input file containing oracle methods
+  * `-evosuitetrials`: the number of the trials that EvoSuite runs
+  * `-evosuitetimeout`: EvoSuite's running timeout in seconds for a trial
+  * `-runparallel`: do you want to run the trials in parallel?
+  * `-stopifoverfittingfound`: do you want to stop running if an overfitting-indicative is found?
 
 ### How to Create an Input File
 
@@ -42,7 +42,7 @@ For a null modified statement as a removed statement (for an insertion, the modi
 
 Currently, DiffTGen uses a fixed version of the faulty program as oracle. DiffTGen creates an instrumented version of the oracle program and runs it against any EvoSuite-generated test methods (as test inputs) to obtain the expected outputs. In an oracle file, you need to specify *the methods in the fixed version that correspond to those that are patched in the patched program*. If they do not include all the methods where the correct fixes are made, you need to additionally specify *the files where the correct fixes are made*. For example, for the bug *Chart_26*, the repair tool jKali modifies a method in *CategoryPlot.java*, but the bug's correct version modifies something in *Axis.java*. In this case, you need to create an oracle file specifying (1) the same method of the fixed version of *CategoryPlot.java* and (2) the fixed version (as a file) of *Axis.java*.
 
-When you need to specify a method of the fixed program, put a line in the form of `filepath:ln,cn` where `filepath` is the path of the method's class file, `ln` is the starting line number of the method, and `cn` is the starting column of the method. (Note that if a method starts with a javadoc as /** ... */, you need to specify the line and column numbers of its opening tag /**.)
+When you need to specify a method of the fixed program, put a line in the form of `filepath:ln,cn` where `filepath` is the path of the method's class file, `ln` is the starting line number of the method, and `cn` is the starting column of the method. (Note that if a method starts with a javadoc, you need to specify the line and column numbers of its opening tag /&ast&ast.)
 
 When you need to specify a fixed file, put a line in the form of `null(filepath)` where `null` is the keyword and `filepath` is the path of the fixed file.
 
