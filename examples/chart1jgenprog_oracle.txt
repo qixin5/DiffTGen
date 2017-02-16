@@ -1,0 +1,1 @@
+/data/people/qx5/testgen/defects4j/Chart_1_jgenprog/fix/AbstractCategoryItemRenderer.java:1782,4

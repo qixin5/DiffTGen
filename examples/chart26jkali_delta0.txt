@@ -1,0 +1,2 @@
+null(/data/people/qx5/testgen/defects4j/Chart_26_jkali/bug/CategoryPlot.java:2547,12;before)
+/data/people/qx5/testgen/defects4j/Chart_26_jkali/patch/CategoryPlot.java:2547,12

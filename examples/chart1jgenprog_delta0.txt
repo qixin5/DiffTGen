@@ -1,0 +1,2 @@
+/data/people/qx5/testgen/defects4j/Chart_1_jgenprog/bug/AbstractCategoryItemRenderer.java:1797,8
+null(/data/people/qx5/testgen/defects4j/Chart_1_jgenprog/patch/AbstractCategoryItemRenderer.java:1796,8;after)

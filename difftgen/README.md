@@ -1,1 +1,0 @@
-Instrutions for how to compile & run DiffTGen will come soon (before the deadline of ISSTA 2017 Artifacts: 02/17/17).

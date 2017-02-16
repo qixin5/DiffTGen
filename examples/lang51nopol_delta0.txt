@@ -1,0 +1,2 @@
+/data/people/qx5/testgen/defects4j/Lang_51_nopol/bug/BooleanUtils.java:677,16
+/data/people/qx5/testgen/defects4j/Lang_51_nopol/patch/BooleanUtils.java:677,16
