@@ -21,7 +21,7 @@ Run `ant compile` to compile all the source files.
   * `-repairtool`: the repair tool id
   * `-difftgendpath`: the path of your DiffTGen directory
   * `-evosuitejpath`: the path of the EvoSuite jar (you may use the jar we provided in the `lib` directory)
-  * `-dependjpath`: the dependency jar path of the faulty program
+  * `-dependjpath`: the dependency jar path of the faulty program (you should create a single jar file of the compiled faulty program including all dependencies)
   * `-outputdpath`: the path of the output directory
   * `-inputfpath`: the path of the input file indicating the syntactic deltas between the faulty program and the patched program
   * `-oracleinputfpath`: the path of the oracle input file containing oracle methods
