@@ -1,5 +1,5 @@
 #!/bin/bash
 
-proj_dir=/home/qx5/DiffTGen #To be CUSTOMIZED (in its absolute path)
+proj_dir=./ #To be CUSTOMIZED (in its absolute path)
 
 java -cp :${proj_dir}/lib/*:${proj_dir}/build testgen.Main $*

@@ -51,4 +51,4 @@ Examples of the input and oracle files can be found under the directory `example
 
 ## Output
 
-The generated test cases, if any, can be found under `outputdir/testcase` where `outputdir` is the output directory you specified. The file named `DiffTGen0Test.java` is an overfitting-indicative test case. The file named `DiffTGen1Test.java` is a repair-indicative test case. The file named `DiffTGen2Test.java` is a defective-indicative test case. (A test-case-instrumented version of the faulty program can be found under `outputdir/bug/instru1`.)
+The generated test cases, if any, can be found under `outputdir/testcase` where `outputdir` is the output directory you specified. The file named `DiffTGen0Test.java` is an regression-indicative test case. The file named `DiffTGen1Test.java` is a repair-indicative test case. The file named `DiffTGen2Test.java` is a defective-indicative test case. (A test-case-instrumented version of the faulty program can be found under `outputdir/bug/instru1`.)
