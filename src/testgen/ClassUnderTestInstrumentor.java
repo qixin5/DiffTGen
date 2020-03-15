@@ -175,6 +175,7 @@ public class ClassUnderTestInstrumentor
 		    VariableDeclarationFragment eid_fgmt = ast.newVariableDeclarationFragment();
 		    eid_fgmt.setInitializer(ast.newNumberLiteral("0"));
 		    String eid_str = "eid_"+md_sigid+"_"+NAME_SUFFIX;
+		    if (eid_list.contains(eid_str)) { continue; }
 		    eid_list.add(eid_str);
 		    eid_fgmt.setName(ast.newSimpleName(eid_str));
 		    FieldDeclaration eid_fd = ast.newFieldDeclaration(eid_fgmt);
