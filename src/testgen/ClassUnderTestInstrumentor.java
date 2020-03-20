@@ -21,6 +21,16 @@ public class ClassUnderTestInstrumentor
     private final static String EID_SUFFIX = "eid_"+ NAME_SUFFIX;
 
 
+    public static void main(String[] args) {
+	String fpath = args[0];
+	List<String> mlocs = new ArrayList<String>();
+	for (int i=1; i<args.length; i++) {
+	    mlocs.add(args[i]);
+	}
+	ClassUnderTestInstrumentor cuti = new ClassUnderTestInstrumentor();
+	cuti.getOutputInstrumentedClass(fpath, mlocs);
+    }
+
     /* For output instrumentation , return true if the class contains eid_xx_7au3e.
        For testcase instrumentation, return true if the class contains oref_map & eid_xx_7au3e. */
     private boolean isCUTInstrumented(int ic_type, CompilationUnit cu) {
@@ -166,24 +176,16 @@ public class ClassUnderTestInstrumentor
 	    //Create eid static fields for all declared methods
 	    //(e.g., "public static int eid_toBoolean_String_7au3e = 0;")
 	    List<FieldDeclaration> eid_fd_list = new ArrayList<FieldDeclaration>();
-	    List<String> eid_list = new ArrayList<String>();
-	    List bd_obj_list = atd.bodyDeclarations();
-	    for (Object bd_obj : bd_obj_list) {
-		if (bd_obj instanceof MethodDeclaration) {
-		    MethodDeclaration md = (MethodDeclaration) bd_obj;
-		    String md_sigid = getMethodSignatureId(md);
-		    VariableDeclarationFragment eid_fgmt = ast.newVariableDeclarationFragment();
-		    eid_fgmt.setInitializer(ast.newNumberLiteral("0"));
-		    String eid_str = "eid_"+md_sigid+"_"+NAME_SUFFIX;
-		    if (eid_list.contains(eid_str)) { continue; }
-		    eid_list.add(eid_str);
-		    eid_fgmt.setName(ast.newSimpleName(eid_str));
-		    FieldDeclaration eid_fd = ast.newFieldDeclaration(eid_fgmt);
-		    eid_fd.setType(ast.newPrimitiveType(PrimitiveType.INT));
-		    eid_fd.modifiers().add(ast.newModifier(Modifier.ModifierKeyword.PUBLIC_KEYWORD));
-		    eid_fd.modifiers().add(ast.newModifier(Modifier.ModifierKeyword.STATIC_KEYWORD));
-		    eid_fd_list.add(eid_fd);
-		}
+	    List<String> eid_list = getMethodEidList(atd, ""); //"" means self-class
+	    for (String eid_str : eid_list) {
+		VariableDeclarationFragment eid_fgmt = ast.newVariableDeclarationFragment();
+		eid_fgmt.setInitializer(ast.newNumberLiteral("0"));
+		eid_fgmt.setName(ast.newSimpleName(eid_str));
+		FieldDeclaration eid_fd = ast.newFieldDeclaration(eid_fgmt);
+		eid_fd.setType(ast.newPrimitiveType(PrimitiveType.INT));
+		eid_fd.modifiers().add(ast.newModifier(Modifier.ModifierKeyword.PUBLIC_KEYWORD));
+		eid_fd.modifiers().add(ast.newModifier(Modifier.ModifierKeyword.STATIC_KEYWORD));
+		eid_fd_list.add(eid_fd);
 	    }
 
 	    if (ic_type == 0) {
@@ -258,7 +260,7 @@ public class ClassUnderTestInstrumentor
 		    rw = instrumentNonInstrumentedMUT(ic_type, tmd0, rw);
 		}
 		else {
-		    rw = instrumentPartialInstrumentedMUT(ic_type, tmd0, rw);
+		    rw = instrumentPartialInstrumentedMUT(ic_type, atd, tmd0, rw);
 		}
 	    }
 	}
@@ -270,8 +272,61 @@ public class ClassUnderTestInstrumentor
 	catch (Exception e) {
 	    System.err.println("Text Edit Apply Error: "+e);
 	}
-	
+	//System.out.println(doc.get());
 	return new InstrumentedClass(atd.getName().getIdentifier(), doc.get());
+    }
+
+    //Visit every inner method of atd and get its eid.
+    //For method from any inner class of atd, add class name in eid.
+    private List<String> getMethodEidList(AbstractTypeDeclaration atd, String classstr) {
+	List<String> eid_list = new ArrayList<String>();
+	List bd_obj_list = atd.bodyDeclarations();
+	for (Object bd_obj : bd_obj_list) {
+	    if (bd_obj instanceof MethodDeclaration) {
+		MethodDeclaration md = (MethodDeclaration) bd_obj;
+		String md_sigid = getMethodSignatureId(md);
+		String eid_str = null;
+		if ("".equals(classstr)) {
+		    eid_str = "eid_"+md_sigid+"_"+NAME_SUFFIX;
+		}
+		else {
+		    eid_str = "eid_"+classstr+"_"+md_sigid+"_"+NAME_SUFFIX;
+		}
+		if (!eid_list.contains(eid_str)) {
+		    eid_list.add(eid_str);
+		}
+	    }
+	    else if (bd_obj instanceof AbstractTypeDeclaration) {
+		AbstractTypeDeclaration iatd = (AbstractTypeDeclaration) bd_obj;
+		String classname = iatd.getName().getIdentifier();
+		String iclassstr = ("".equals(classstr)) ? classname : (classstr+"_"+classname);
+		List<String> ieid_list = getMethodEidList(iatd, iclassstr);
+		for (String ieid_str : ieid_list) {
+		    if (!eid_list.contains(ieid_str)) { 
+			eid_list.add(ieid_str);
+		    }
+		}
+	    }
+	}
+	return eid_list;
+    }
+
+    //Get class str in a bottom-up way
+    private String getClassStr(AbstractTypeDeclaration atd, MethodDeclaration md) {
+	String classstr = "";
+	ASTNode curr_par = md.getParent();
+	while (curr_par != null) {
+	    if (curr_par == (ASTNode) atd) {
+		return classstr;
+	    }
+	    else if (curr_par instanceof AbstractTypeDeclaration) {
+		String newname = ((AbstractTypeDeclaration) curr_par).getName().getIdentifier();
+		if ("".equals(classstr)) { classstr = newname; }
+		else { classstr = newname + "_" + classstr; }
+	    }
+	    curr_par = curr_par.getParent();
+	}
+	return classstr;
     }
 
     private ASTRewrite instrumentNonInstrumentedMUT(int ic_type, MethodDeclaration tmd, ASTRewrite rw) {
@@ -288,7 +343,10 @@ public class ClassUnderTestInstrumentor
 	AbstractTypeDeclaration atd = (AbstractTypeDeclaration) cu.types().get(0);
 	String tmd_new_name = tmd.getName().getIdentifier()+"_"+NAME_SUFFIX;
 	String tmd_sigid = getMethodSignatureId(tmd);
-	String tmd_eid = "eid_"+tmd_sigid+"_"+NAME_SUFFIX;
+	String classstr = getClassStr(atd, tmd);
+	String tmd_eid = null;
+	if ("".equals(classstr)) { tmd_eid = "eid_"+tmd_sigid+"_"+NAME_SUFFIX; }
+	else { tmd_eid = "eid_"+classstr+"_"+tmd_sigid+"_"+NAME_SUFFIX; }
 	rw.set(tmd, MethodDeclaration.NAME_PROPERTY, ast.newSimpleName(tmd_new_name), null);
 	List tmd_params = tmd.parameters();
 	Type tmd_ret = tmd.getReturnType2();
@@ -504,7 +562,7 @@ public class ClassUnderTestInstrumentor
 	return rw;
     }
 
-    private ASTRewrite instrumentPartialInstrumentedMUT(int ic_type, MethodDeclaration tmd, ASTRewrite rw) {
+    private ASTRewrite instrumentPartialInstrumentedMUT(int ic_type, AbstractTypeDeclaration atd, MethodDeclaration tmd, ASTRewrite rw) {
 
 	AST ast = tmd.getAST();
 	//Get the method call as "xx_7au3e" from the body of tmd
@@ -529,7 +587,10 @@ public class ClassUnderTestInstrumentor
 	    ListRewrite lrw1 = rw.getListRewrite(cc_block, Block.STATEMENTS_PROPERTY);
 
 	    String tmd_sigid = getMethodSignatureId(tmd);
-	    String tmd_eid = "eid_"+tmd_sigid+"_"+NAME_SUFFIX;
+	    String classstr = getClassStr(atd, tmd);
+	    String tmd_eid = null;
+	    if ("".equals(classstr)) { tmd_eid = "eid_"+tmd_sigid+"_"+NAME_SUFFIX; }
+	    else { tmd_eid = "eid_"+classstr+"_"+tmd_sigid+"_"+NAME_SUFFIX; }
 	    List tmd_params = tmd.parameters();
 	    Type tmd_ret = tmd.getReturnType2();
 	    List tmd_modifiers = tmd.modifiers();
